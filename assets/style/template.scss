@@ -1,7 +1,17 @@
 //общие стили сюда
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
+
+$FontTitle: '"Noto Sans Display", sans-serif';
+
+$Yellow : rgba(255, 189, 78, 1);
+$Background:rgba(41, 52, 62, 1);
+$Gray: rgba(255, 255, 255, 0.3);
+
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+
