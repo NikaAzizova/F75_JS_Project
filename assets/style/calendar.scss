@@ -1,4 +1,5 @@
 @import './template.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 
 
@@ -72,10 +73,10 @@
     }
 
     .calendar__info {
-        height: 20vh;
+        height: fit-content;
 
         .calendar__month {
-            height: 100%;
+            height: 20vh;
             display: flex;
             align-items: center;
             position: relative;
@@ -101,6 +102,9 @@
                     width: 40px;
                     height: 40px;
                 }
+                .month__btn:hover{
+                    transform: scale(1.1);
+                }
 
                 .btn-active {
                     position: relative;
@@ -116,6 +120,9 @@
                         top: 22%;
                         position: absolute;
                     }
+                }
+                .btn-active:hover{
+                    transform: scale(1.2);
                 }
             }
 
@@ -140,13 +147,204 @@
                 }
             }
         }
-        .calendar__info-content{
-            margin-top: 10%;
+        .calendar__info-content-box{
+            position: relative;
+            margin-top:2%;
            height: 150vh;
            background-repeat: no-repeat;
           background-size:cover;
-            background-image: url('/assets/images/calendar/fon-info.svg');
-            
+            background-image: url('/assets/images/calendar/gradient2.png');
+            .calendar__info-content{
+                padding-top: 10%;
+                width: 70%;
+                height: fit-content;
+                margin: auto;
+            display: flex;
+            flex-direction: column;
+            .info__link{
+                color: rgba(255, 252, 249, 0.786);
+                width: 100%;
+                text-align: right;
+                .info-link__arrow{
+                    margin-left: 1%;
+                }
+            }
+            .info__link:hover{
+                color: white;
+            }
+            .info__content-box{
+                margin-top: 5%;
+                display: flex;
+                justify-content: space-between;
+                gap:5%;
+                .info-img{
+                    width: 45%;
+                    height: 100%;
+                }
+                .info__content-text{
+                    width: 45%;
+                    .info__title{
+                        color: white;
+                        font-family: $FontTitle;
+                        font-size: 2.3rem;
+                        font-weight: 300;
+                    }
+                    .info__text{
+                        color: rgba(255, 252, 249, 0.786);
+                        margin-top: 5%;
+                        font-weight: 100;
+                        font-family:$FontText;
+                    }
+                    .info__dop-info{
+                        margin-top: 10%;
+                        flex-wrap: wrap;
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 30px 7%;
+                        .dop-info__box{
+                            width: 40%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            gap: 2px 5%;
+                            border-bottom: 1px $Yellow solid;
+                            .dop-info__icon{
+                                width: 30%;
+                                height: 40%;
+                                color: white;
+                            }
+                            .dop-info__title{
+                                width: 60%;
+                                color: white;
+                            }
+                            .dop-info__text{
+                                width: 100%;
+                                color: white;
+                                font-family: $FontText;
+                                font-weight: 100;
+                            }
+                        }
+                    }
+                    .info__btn{
+                        width: 100%;
+                        height: 35px;
+                        margin-top: 5%;
+                        background-color: $Yellow;
+                        border: none;
+                        border-radius: 10px;
+                        font-family: $FontText;
+                        font-size: 1rem;
+                        font-weight: 600;
+                    }
+                }
+
+            }
+            }
+        }
+        .calendar__info-content-box::before{
+            content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+opacity:1;
+background-image: url('/assets/images/calendar/fon-info.svg');
+z-index:-1;
         }
     }
+    .calendar__about{
+        height: 44vh;
+        .calendar__about-content{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            gap:4%;
+            .calendar__about-text{
+            align-self: center;
+            width: 35%;
+            font-size: 1rem;
+            color: rgba(255, 252, 249, 0.786);
+            font-family: $FontText;
+            font-weight: 50;
+            .calendar__about-text-bould{
+                color: white;
+                font-weight: bolder;
+                font-family: $FontTitle;
+            }
+            }
+            .calendar__about-text:first-child{
+                text-align: end;
+            }
+            .about-img{
+                width: 30%;
+                height: auto;
+                opacity: 0.5;
+            }
+        }
+    }
+    .calendar__form{
+        position: relative;
+        height: 100vh;
+        margin-top: 5%;
+        background-image: url('/assets/images/calendar/gradient.svg');
+        .calendar__form-title{
+            margin-top: 10%;
+            color: white;
+            font-family: $FontTitle;
+            text-align: center;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        .calendar__form-registration{
+            width: 40%;
+            border: 1px solid;
+            margin:5% auto 0;
+            display: flex;
+            gap:2%;
+            .form__inputs{
+                display: flex;
+                flex-direction: column;
+                width: 90%;
+                gap:21px;
+                .form__input{
+                    background-color: rgba(210, 210, 210, 0.3);
+                    height: 65px;
+                    border-radius: 20px;
+                    border: none;
+                    padding-left: 29px;
+                    color: white;
+                    font-size: 1rem;
+                    font-family: $FontText;
+                    font-weight: 300;
+                }
+                .form__input::placeholder{
+                    color: rgba(255, 255, 255, 0.31);
+                    font-size: 0.9rem;
+                    font-weight: 800;
+                }
+            }
+            .form__btn{
+                background-color: $Yellow;
+                width: 61px;
+                height: 237px;
+                border-radius: 20px;
+                border: none;
+                .form__btn-text{
+                    writing-mode: vertical-lr;
+                    
+                }
+            }
+        }
+    }
+    .calendar__form::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+opacity:1;
+background-image: url("/assets/images/calendar/fonForm.png");
+z-index:-1;
+    }
+    
+
 }
