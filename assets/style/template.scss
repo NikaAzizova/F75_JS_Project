@@ -1,7 +1,10 @@
 //общие стили сюда
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
-$FontTitle: '"Noto Sans Display", sans-serif';
+
+$FontTitle: "Noto Sans Display", sans-serif;
+$FontText: "Montserrat", sans-serif;
 
 $Yellow : rgba(255, 189, 78, 1);
 $Background:rgba(41, 52, 62, 1);
