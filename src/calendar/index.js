@@ -1,12 +1,10 @@
 const dataNew = new Date();
 const monthNew = dataNew.getMonth();
 let currentIndexMonth = monthNew;
-
-
-
 const btnPrev = document.getElementById("btn__prev");
 const btnActive = document.getElementById("btn__active");
 const btnNext = document.getElementById("btn__next");
+
 
 btnNext.addEventListener('click',()=>{
     if( currentIndexMonth >= 11){
