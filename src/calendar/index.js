@@ -1,6 +1,7 @@
 const dataNew = new Date();
 const monthNew = dataNew.getMonth();
-let currentIndexMonth = monthNew-1;
+let currentIndexMonth = monthNew;
+
 
 
 const btnPrev = document.getElementById("btn__prev");
@@ -8,25 +9,30 @@ const btnActive = document.getElementById("btn__active");
 const btnNext = document.getElementById("btn__next");
 
 btnNext.addEventListener('click',()=>{
+    if( currentIndexMonth >= 11){
+        currentIndexMonth=0;
+    }else{
 currentIndexMonth++;
+    }
 showInfo();
 showMonth();
 }) 
 
 btnActive.addEventListener('click',()=>{
-    currentIndexMonth = monthNew-1;
+    currentIndexMonth = monthNew;
     showInfo();
     showMonth();
     }) 
 
     btnPrev.addEventListener('click',()=>{
-        if( currentIndexMonth >=info.length){
-            currentIndexMonth=0;
+        if( currentIndexMonth <=0){
+            currentIndexMonth=11;
         }else{
         currentIndexMonth--;
         }
         showInfo();
         showMonth();
+        
         }) 
 
 
@@ -90,8 +96,9 @@ function showInfo() {
     `
 }
 
-function showMonth(){
-    document.getElementById("month-prev").textContent = `${info[currentIndexMonth-1].month}`;
+
+function showMonth(){  
+    document.getElementById("month-prev").textContent = `${info[(currentIndexMonth-1)<0 ? 11 :currentIndexMonth-1].month}`;
     document.getElementById("month-now").textContent = `${info[currentIndexMonth].month}`;
-    document.getElementById("month-next").textContent = `${info[currentIndexMonth+1].month}`;
+    document.getElementById("month-next").textContent = `${info[(currentIndexMonth+1)>=12 ? 0 :currentIndexMonth+1].month}`;
 }
