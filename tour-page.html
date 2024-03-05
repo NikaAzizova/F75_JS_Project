@@ -20,6 +20,25 @@
         </section>
         <section class="offer">
             <div class="offer__reservation">
+                <div class="offer__reservation-text">
+                    <div class="offer__reservation-text-main">Бронирование тура</div>
+                    <div class="offer__reservation-text-lil">Оставьте ваши данные и мы перезвоним вам для уточнения всех деталей для более точного бронирования!</div>
+                </div>
+                <div class="offer__reservation-inputs">
+                    <form class="offer__reservation-inputs">
+                    <div>
+                        <input class="offer__reservation-input" type="text" id="name" required pattern="[а-яА-Яa-zA-Z]+" placeholder="Ваше имя">
+                    </div>
+                    <div>
+                        <input class="offer__reservation-input" type="tel" id="phone" required pattern="\+7\d{10}" placeholder="Ваш номер телефона:">
+                    </div>
+                    <div>
+                        <input class="offer__reservation-input"  type="email" id="email" required placeholder="Ваш email">
+                    </div>
+                    <button class="offer__reservation-button" type="submit">Забронировать</button>
+                    </form>
+                    </div>
+                </div>
             </div>
             <div class="offer__text-wrapper">
                 <div class="offer__text-main">Откройте для себя <span class="highlight">Шестой континент</span> в роскошном обрамлении на борту новейшего экспедиционного лайнера <span class="highlight">SH Vega</span>. </div>
@@ -45,7 +64,7 @@
                 </div>
             </div>
             <div class="offer__img-wrapper">
-                <img src="./assets/images/tour-pages/gal.png" alt="">
+                <button class="offer__button"><img src="./assets/images/tour-pages/gal.png" alt=""></button>
             </div>
         </section>
         <section class="expectation">
@@ -186,6 +205,7 @@
                 </div>
             </div>
         </section>
+    <script src="/src/tour-page.js"></script>
     </main>
 <footer></footer>
 </body>

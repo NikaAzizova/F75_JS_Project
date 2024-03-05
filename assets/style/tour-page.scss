@@ -9,10 +9,10 @@
 }
 
 
+
 .main {
 position: relative;
 z-index: 0;
-height: 7700px;
 background-color: rgb(43, 52, 61);
 font-family: $FontTitle;
 color: #FFFFFF;
@@ -57,7 +57,48 @@ color: #FFFFFF;
     background-size: cover;
 
     .offer__reservation {
-        height: 5vh;
+        height: 20vh;
+        width: 100%;
+        background-color:  rgba(128, 128, 128, 0.2);
+
+        .offer__reservation-text {
+            display: flex;
+            padding-left: 20vw;
+            padding-top: 3vh;
+
+            .offer__reservation-text-main {
+                font-size: 1.5rem;
+            }
+
+            .offer__reservation-text-lil {
+                font-size: 0.8rem;
+                padding-left: 8vw;
+                padding-top: 1%;
+                color: $Gray;
+            }
+        }
+
+        .offer__reservation-inputs {
+            display: flex;
+            padding-left: 8vw;
+            padding-top: 2vh;
+
+            .offer__reservation-input {
+                border-radius: 20px;
+                background-color: #FFFFFF;
+                width: 20vw;
+                height: 4vh;
+                padding-left: 5vw;
+                padding-right: 5vw;
+                font-size: 0.8rem;
+            }
+
+            .offer__reservation-button {
+                background-color: #FFBD4E;
+                border-radius: 20px;
+                width: 20vw;
+            }
+        }
     }
 
     .offer__text-wrapper {
@@ -77,7 +118,7 @@ color: #FFFFFF;
         }
 
         .offer__text-little {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 400;
             line-height: 2.4rem;
             padding-top: 3%;
@@ -94,8 +135,8 @@ color: #FFFFFF;
         .offer_circle {
             border-radius: 50%;
             border: 3px solid #FFBD4E;
-            width: 18vw;
-            height: 30vh;
+            width: 17vw;
+            height: 28vh;
             position: absolute;
             text-align: center;
 
@@ -109,14 +150,14 @@ color: #FFFFFF;
             .offer_circle-img2 {
                 width: 5vw;
                 height: 9vh;
-                padding-left: 7%;
+                padding-left: 6%;
                 padding-top: 13%;
             }
 
             .offer_circle-img3 {
                 width: 4vw;
                 height: 8vh;
-                padding-left: 7%;
+                padding-left: 5%;
                 padding-top: 13%;
             }
 
@@ -138,7 +179,7 @@ color: #FFFFFF;
             }
 
             .offer_circle-text4 {
-                padding-top: 10%;
+                padding-top: 9%;
                 padding-left: 10%;
                 padding-right: 10%;
                 font-size: 1rem;
@@ -146,18 +187,18 @@ color: #FFFFFF;
         }
 
         .offer_circle:nth-child(1) {
-            top: 156vh;
-            left: 22vw;
+            top: 160vh;
+            left: 25vw;
         }
 
         .offer_circle:nth-child(2) {
-            left: 38vw;
-            top: 156vh;
+            left: 41vw;
+            top: 160vh;
         }
 
         .offer_circle:nth-child(3) {
-            left: 54vw;
-            top: 156vh;
+            left: 57vw;
+            top: 160vh;
         }
     }
 
@@ -166,7 +207,11 @@ color: #FFFFFF;
         height: 10vh;
         position: absolute;
         left: 47vw;
-        padding-top: 40vh;
+        padding-top: 25vh;
+
+        .offer__button {
+                background: none;
+        }
     }
 }
 .expectation {
