@@ -7,7 +7,7 @@
     position: relative;
     z-index: 0;
     background-color: $Background;
-    height: 3000px;
+    height: fit-content;
 
     .calendar {
         height: 90vh;
@@ -26,7 +26,7 @@
                 font-family: $FontTitle;
                 color: white;
                 font-size: 5rem;
-                width: 60%;
+                width: 100%;
             }
 
             .calendar__title-color {
@@ -150,7 +150,8 @@
         .calendar__info-content-box{
             position: relative;
             margin-top:2%;
-           height: 150vh;
+           min-height: 150vh;
+           height: fit-content;
            background-repeat: no-repeat;
           background-size:cover;
             background-image: url('/assets/images/calendar/gradient2.png');
@@ -173,13 +174,15 @@
                 color: white;
             }
             .info__content-box{
-                margin-top: 5%;
+                margin-top: 3%;
+                height: fit-content;
                 display: flex;
                 justify-content: space-between;
                 gap:5%;
                 .info-img{
                     width: 45%;
-                    height: 100%;
+                    height: 550px;
+                    min-height: auto;
                 }
                 .info__content-text{
                     width: 45%;
@@ -203,6 +206,8 @@
                         gap: 30px 7%;
                         .dop-info__box{
                             width: 40%;
+                            min-height: 120px;
+                            height: fit-content;
                             display: flex;
                             flex-wrap: wrap;
                             align-items: center;
@@ -225,19 +230,25 @@
                             }
                         }
                     }
-                    .info__btn{
-                        width: 100%;
-                        height: 35px;
-                        margin-top: 5%;
-                        background-color: $Yellow;
-                        border: none;
-                        border-radius: 10px;
-                        font-family: $FontText;
-                        font-size: 1rem;
-                        font-weight: 600;
-                    }
+                
                 }
 
+            }
+            .info__btn{
+                cursor: pointer;
+                margin-left: 55%;
+                width: 45%;
+                height: 35px;
+                margin-top: 5%;
+                background-color: $Yellow;
+                border: none;
+                border-radius: 10px;
+                font-family: $FontTitle;
+                font-size: 1rem;
+                font-weight: bolder;
+            }
+            .info__btn:hover{
+                transform: scale(1.1);
             }
             }
         }
@@ -252,7 +263,7 @@ z-index:-1;
         }
     }
     .calendar__about{
-        height: 44vh;
+        height: 50vh;
         .calendar__about-content{
             width: 80%;
             margin: auto;
@@ -282,69 +293,23 @@ z-index:-1;
             }
         }
     }
-    .calendar__form{
-        position: relative;
-        height: 100vh;
-        margin-top: 5%;
-        background-image: url('/assets/images/calendar/gradient.svg');
-        .calendar__form-title{
-            margin-top: 10%;
-            color: white;
-            font-family: $FontTitle;
-            text-align: center;
-            font-weight: bold;
-            font-size: 2rem;
-        }
-        .calendar__form-registration{
-            width: 40%;
-            border: 1px solid;
-            margin:5% auto 0;
-            display: flex;
-            gap:2%;
-            .form__inputs{
-                display: flex;
-                flex-direction: column;
-                width: 90%;
-                gap:21px;
-                .form__input{
-                    background-color: rgba(210, 210, 210, 0.3);
-                    height: 65px;
-                    border-radius: 20px;
-                    border: none;
-                    padding-left: 29px;
-                    color: white;
-                    font-size: 1rem;
-                    font-family: $FontText;
-                    font-weight: 300;
-                }
-                .form__input::placeholder{
-                    color: rgba(255, 255, 255, 0.31);
-                    font-size: 0.9rem;
-                    font-weight: 800;
-                }
-            }
-            .form__btn{
-                background-color: $Yellow;
-                width: 61px;
-                height: 237px;
-                border-radius: 20px;
-                border: none;
-                .form__btn-text{
-                    writing-mode: vertical-lr;
-                    
-                }
-            }
-        }
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    .modal__content{
+        background-color: $Background;
+        padding: 30px;
+        width: 40%;
+        margin: 15% auto;
+        border: 1px solid $Background;
+        border-radius: 20px;
     }
-    .calendar__form::before{
-content: "";
-position: absolute;
-width: 100%;
-height: 100%;
-opacity:1;
-background-image: url("/assets/images/calendar/fonForm.png");
-z-index:-1;
-    }
-    
-
 }
