@@ -70,6 +70,24 @@
             </div>
         </section>
     </main>
+    <div id="modal" class="modal">
+        <div class="modal__content">
+            <span class="modal__close">&#215;</span>
+            <h2 class="modal__title">Вы выбрали тур: <span class="modal__title-name"></span></h2>
+            <p class="modal__subtitle">Даты поездки: <span class="modal__title-datas"></span></p>
+            <div class="count__peopls-box">
+            <label class="count__people" for="count__people">Количество человек: </label>
+            <input type="number" min="1" max="5" id="count__people" class="count__people-input"/>
+        </div>
+            <div class="modal__inputs">
+                <input type="text" class="iput" placeholder="Фамилия имя отчество" />
+                <input type="number" class="input" placeholder="Введите ваш номер телефона"/>
+                <input type="email" class="input" placeholder="Введите ваш email"/>
+            </div>
+            <p class="modal__price">Общая сумма тура составляет : <span class="modal__price-sum"></span></p>
+            <button type="submit" id="confirmBtn" class="confirm__btn">Забронировать</button>
+        </div>
+    </div>
 </body>
 <script src="./src/calendar/index.js"></script>
 
