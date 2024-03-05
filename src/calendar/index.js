@@ -2,6 +2,7 @@ const dataNew = new Date();
 const monthNew = dataNew.getMonth();
 let currentIndexMonth = monthNew-1;
 
+
 const btnPrev = document.getElementById("btn__prev");
 const btnActive = document.getElementById("btn__active");
 const btnNext = document.getElementById("btn__next");
@@ -19,7 +20,11 @@ btnActive.addEventListener('click',()=>{
     }) 
 
     btnPrev.addEventListener('click',()=>{
+        if( currentIndexMonth >=info.length){
+            currentIndexMonth=0;
+        }else{
         currentIndexMonth--;
+        }
         showInfo();
         showMonth();
         }) 
