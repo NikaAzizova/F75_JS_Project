@@ -295,7 +295,7 @@ z-index:-1;
     }
 }
 .modal{
-    display: block;
+    display: none;
     position: fixed;
     z-index: 0;
     left: 0;
@@ -337,6 +337,9 @@ z-index:-1;
             font-family: $FontText;
             font-size: 1rem;
         }
+        .message-error{
+            color: red;
+        }
         .modal__inputs{
             display: flex;
             flex-direction: column;
@@ -350,6 +353,9 @@ z-index:-1;
                 font-family: $FontText;
                 padding-left: 30px;
                 font-size: 1rem;
+            }
+            .message-error{
+                color: red;
             }
             .input::placeholder{
                 color: rgba(255, 255, 255, 0.31);

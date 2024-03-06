@@ -71,22 +71,22 @@
         </section>
     </main>
     <div id="modal" class="modal">
-        <div class="modal__content">
+        <form name="confirmForm" class="modal__content" novalidate>
             <span class="modal__close">&#215;</span>
-            <h2 class="modal__title">Вы выбрали тур: <span class="modal__title-name"></span></h2>
-            <p class="modal__subtitle">Даты поездки: <span class="modal__title-datas"></span></p>
+            <h2 class="modal__title">Вы выбрали тур: <span id="modal__title-name" class="modal__title-name"></span></h2>
+            <p class="modal__subtitle">Даты поездки: <span id="modal__title-datas" class="modal__title-datas"></span></p>
             <div class="count__peopls-box">
             <label class="count__people" for="count__people">Выберите количество человек: </label>
-            <input type="number" min="1" max="5" id="count__people" class="count__people-input" value="1"/>
+            <input name="number" type="number" min="1" max="5" id="count__people" class="count__people-input" placeholder="1" required/>
         </div>
             <div class="modal__inputs">
-                <input type="text" class="input" placeholder="Фамилия имя отчество" />
-                <input type="tel" class="input" placeholder="Введите ваш номер телефона"/>
-                <input type="email" class="input" placeholder="Введите ваш email"/>
+                <input id="name" name="name" type="text" class="input" placeholder="Введите ваше имя и фамилию" required />
+                <input id="tel" name="tel" type="tel" class="input" placeholder="Введите ваш номер телефона" required/>
+                <input id="email" name="email" type="email" class="input" placeholder="Введите ваш email" required/>
             </div>
-            <p class="modal__price">Общая сумма тура составляет : <span class="modal__price-sum"></span></p>
+            <p class="modal__price">Общая сумма тура составляет : <span id="modal__price-sum" class="modal__price-sum"></span></p>
             <button type="submit" id="confirmBtn" class="confirm__btn">Забронировать</button>
-        </div>
+        </form>
     </div>
 </body>
 <script  src="./src/calendar/index.js"></script>
