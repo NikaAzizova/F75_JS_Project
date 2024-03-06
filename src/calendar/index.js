@@ -6,6 +6,8 @@ const btnActive = document.getElementById("btn__active");
 const btnNext = document.getElementById("btn__next");
 
 
+
+
 btnNext.addEventListener('click',()=>{
     if( currentIndexMonth >= 11){
         currentIndexMonth=0;
