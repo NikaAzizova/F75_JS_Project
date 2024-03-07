@@ -306,10 +306,82 @@ z-index:-1;
     background-color: rgba(0, 0, 0, 0.4);
     .modal__content{
         background-color: $Background;
-        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        padding:10px 30px 30px 30px;
         width: 40%;
-        margin: 15% auto;
+        margin: 5% auto;
         border: 1px solid $Background;
         border-radius: 20px;
+        color:rgba(255, 252, 249, 0.786) ;
+        font-family: $FontTitle;
+        gap:15px;
+        .modal__close{
+            text-align: right;
+            color: $Gray;
+            font-size: 2.2rem;
+            cursor: pointer;
+        }
+        .modal__close:hover{
+            color: white;
+        }
+        .count__people-input{
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid $Yellow;
+            text-align: center;
+            padding-left: 15px;
+            padding-bottom: 5px;
+            margin-left: 2%;
+            color: white;
+            font-family: $FontText;
+            font-size: 1rem;
+        }
+        .message-error{
+            color: red;
+        }
+        .modal__inputs{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+            .input{
+                height: 50px;
+                border-radius: 20px;
+                background-color: rgba(210, 210, 210, 0.3);
+                border: none;
+                color: white;
+                font-family: $FontText;
+                padding-left: 30px;
+                font-size: 1rem;
+            }
+            .message-error{
+                color: red;
+            }
+            .input::placeholder{
+                color: rgba(255, 255, 255, 0.31);
+                font-family: $FontText;
+                font-size: 1rem;
+            }
+        }
+        .modal__price{
+            margin: 3% 0%;
+            }
+        .confirm__btn{
+                cursor: pointer;
+                margin-left: 25%;
+                width: 50%;
+                height: 35px;
+                margin-top: 5%;
+                background-color: $Yellow;
+                border: none;
+                border-radius: 10px;
+                font-family: $FontTitle;
+                font-size: 1rem;
+                font-weight: bolder;
+        }
+        .confirm__btn:hover{
+            transform: scale(1.1);
+            transition: 0.5s ease-in-out;
+        }
     }
 }
