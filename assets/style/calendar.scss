@@ -12,7 +12,6 @@
     .calendar {
         height: 90vh;
         position: relative;
-
         .calendar__container {
             width: 80%;
             margin: auto;
@@ -27,6 +26,9 @@
                 color: white;
                 font-size: 5rem;
                 width: 100%;
+                @media (max-width: 768px) {
+                   font-size: 4rem;
+                }
             }
 
             .calendar__title-color {
@@ -44,6 +46,9 @@
             bottom: 0;
             display: flex;
             align-items: center;
+            @media (max-width: 768px) {
+                width: 50%;
+            }
 
             .calendar__lingua-content {
                 width: 100%;
@@ -59,6 +64,9 @@
                     cursor: pointer;
                 }
             }
+        }
+        @media (max-width: 768px) {
+           height: 50vh;
         }
     }
 
@@ -93,6 +101,10 @@
                 left: 35%;
                 display: flex;
                 justify-content: space-between;
+                @media (max-width: 768px) {
+                   width: 50%;
+                   left: 25%;
+                }
 
                 .month__btn {
                     position: relative;
@@ -133,6 +145,10 @@
                 bottom: 0;
                 left: 33%;
                 justify-content: space-between;
+                @media (max-width: 768px) {
+                    width: 55%;
+                    left:22%;
+                }
 
                 .month {
                     font-family: $FontTitle;
@@ -155,6 +171,9 @@
            background-repeat: no-repeat;
           background-size:cover;
             background-image: url('/assets/images/calendar/gradient2.png');
+            @media (max-width: 768px) {
+               min-height: 80vh;
+            }
             .calendar__info-content{
                 padding-top: 10%;
                 width: 70%;
@@ -162,6 +181,9 @@
                 margin: auto;
             display: flex;
             flex-direction: column;
+            @media (max-width: 768px) {
+              width: 80%;
+            }
             .info__link{
                 color: rgba(255, 252, 249, 0.786);
                 width: 100%;
@@ -183,6 +205,9 @@
                     width: 45%;
                     height: 550px;
                     min-height: auto;
+                    @media (max-width: 768px) {
+                       height: 400px;
+                    }
                 }
                 .info__content-text{
                     width: 45%;
@@ -264,12 +289,18 @@ z-index:-1;
     }
     .calendar__about{
         height: 50vh;
+        @media (max-width: 768px) {
+           height: 40vh;
+        }
         .calendar__about-content{
             width: 80%;
             margin: auto;
             display: flex;
             justify-content: space-around;
             gap:4%;
+            @media (max-width: 768px) {
+               width: 90%;
+            }
             .calendar__about-text{
             align-self: center;
             width: 35%;
@@ -277,6 +308,9 @@ z-index:-1;
             color: rgba(255, 252, 249, 0.786);
             font-family: $FontText;
             font-weight: 50;
+            @media (max-width: 768px) {
+                font-size: 0.8rem;
+            }
             .calendar__about-text-bould{
                 color: white;
                 font-weight: bolder;
@@ -316,6 +350,9 @@ z-index:-1;
         color:rgba(255, 252, 249, 0.786) ;
         font-family: $FontTitle;
         gap:15px;
+        @media (max-width: 768px) {
+            width: 70%;
+        }
         .modal__close{
             text-align: right;
             color: $Gray;
