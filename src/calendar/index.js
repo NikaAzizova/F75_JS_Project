@@ -2,7 +2,7 @@ import {
     name,
     tel,
     email,
-    number,btnActive,btnNext,btnPrev
+    number,btnActive,btnNext,btnPrev,LinkLearnMore
 } from "./vars";
 import {
     validateEmail,
@@ -22,6 +22,13 @@ const confirmForm = document.forms.confirmForm;
 const inputs = document.querySelectorAll('.input');
 let hasError = false;
 
+function LearnMore(){
+    let currentIndex= info[currentIndexMonth].id;
+    localStorage.setItem("currentIndex",currentIndex);
+    console.log(currentIndex);
+    }
+
+LinkLearnMore.addEventListener('click',LearnMore);
 
 
 confirmForm.addEventListener('submit', function (evevnt) {
