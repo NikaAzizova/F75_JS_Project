@@ -26,9 +26,15 @@
                 color: white;
                 font-size: 5rem;
                 width: 100%;
-                @media (max-width: 768px) {
+                @media (max-width: 1024px) {
                    font-size: 4rem;
                 }
+                @media (max-width: 540px) {
+                    font-size: 3rem;
+                 }
+                 @media (max-width: 430px) {
+                    font-size: 2rem;
+                 }
             }
 
             .calendar__title-color {
@@ -46,9 +52,12 @@
             bottom: 0;
             display: flex;
             align-items: center;
-            @media (max-width: 768px) {
+            @media (max-width: 1024px) {
                 width: 50%;
             }
+            @media (max-width: 430px) {
+                width: 100%;
+             }
 
             .calendar__lingua-content {
                 width: 100%;
@@ -62,12 +71,18 @@
                     font-weight: 200;
                     text-decoration: underline;
                     cursor: pointer;
+                    @media (max-width: 540px) {
+                        font-size: 0.7rem;
+                     }
                 }
             }
         }
-        @media (max-width: 768px) {
+        @media (max-width: 1000px) {
            height: 50vh;
         }
+        @media (max-width: 430px) {
+            height: 40vh;
+         }
     }
 
     .calendar::before {
@@ -101,10 +116,14 @@
                 left: 35%;
                 display: flex;
                 justify-content: space-between;
-                @media (max-width: 768px) {
+                @media (max-width: 1000px) {
                    width: 50%;
                    left: 25%;
                 }
+                @media (max-width: 430px) {
+                    width: 70%;
+                    left: 15%;
+                 }
 
                 .month__btn {
                     position: relative;
@@ -145,21 +164,31 @@
                 bottom: 0;
                 left: 33%;
                 justify-content: space-between;
-                @media (max-width: 768px) {
+                @media (max-width: 1000px) {
                     width: 55%;
                     left:22%;
                 }
+                @media (max-width: 430px) {
+                    width: 75%;
+                    left: 16%;
+                 }
 
                 .month {
                     font-family: $FontTitle;
                     letter-spacing: 0.2rem;
                     color: $Gray;
                     font-size: 1rem;
+                    @media (max-width: 580px) {
+                        font-size: 0.8rem;
+                     }
                 }
                 .month-now{
                     font-size: 1.3rem;
                     color: white;
                     font-weight: 700;
+                    @media (max-width: 580px) {
+                        font-size: 1rem;
+                     }
                 }
             }
         }
@@ -171,7 +200,7 @@
            background-repeat: no-repeat;
           background-size:cover;
             background-image: url('/assets/images/calendar/gradient2.png');
-            @media (max-width: 768px) {
+            @media (max-width: 1000px) {
                min-height: 80vh;
             }
             .calendar__info-content{
@@ -181,9 +210,15 @@
                 margin: auto;
             display: flex;
             flex-direction: column;
-            @media (max-width: 768px) {
+            @media (max-width: 580px) {
+                width: 90%;
+             }
+            @media (max-width: 1000px) {
               width: 80%;
             }
+            @media (max-width: 430px) {
+                width: 95%;
+             }
             .info__link{
                 color: rgba(255, 252, 249, 0.786);
                 width: 100%;
@@ -191,6 +226,9 @@
                 .info-link__arrow{
                     margin-left: 1%;
                 }
+                @media (max-width: 430px) {
+                    width: 90%;
+                 }
             }
             .info__link:hover{
                 color: white;
@@ -201,27 +239,48 @@
                 display: flex;
                 justify-content: space-between;
                 gap:5%;
+                @media (max-width: 580px) {
+                    flex-direction: column;
+                 }
                 .info-img{
                     width: 45%;
                     height: 550px;
                     min-height: auto;
-                    @media (max-width: 768px) {
+                    @media (max-width: 1000px) {
                        height: 400px;
                     }
+                    @media (max-width: 580px) {
+                        width: 90%;
+                        margin: auto;
+                        height: auto;
+                        order: 1;
+                        margin-bottom: 5%;
+                     }
                 }
                 .info__content-text{
                     width: 45%;
+                    @media (max-width: 580px) {
+                       width: 90%;
+                       margin: auto;
+                     }
                     .info__title{
                         color: white;
                         font-family: $FontTitle;
                         font-size: 2.3rem;
                         font-weight: 300;
+                        @media (max-width: 580px) {
+                            text-align: center;
+                            margin-top: 2%;
+                        }
                     }
                     .info__text{
                         color: rgba(255, 252, 249, 0.786);
                         margin-top: 5%;
                         font-weight: 100;
                         font-family:$FontText;
+                        @media (max-width: 580px) {
+                            text-align: center;
+                         }
                     }
                     .info__dop-info{
                         margin-top: 10%;
@@ -229,6 +288,10 @@
                         display: flex;
                         justify-content: space-between;
                         gap: 30px 7%;
+                        @media (max-width: 580px) {
+                           gap:20px 5%;
+                           margin-bottom: 10%;
+                         }
                         .dop-info__box{
                             width: 40%;
                             min-height: 120px;
@@ -271,6 +334,12 @@
                 font-family: $FontTitle;
                 font-size: 1rem;
                 font-weight: bolder;
+                @media (max-width: 580px) {
+                    margin-left: 25%;
+                    width: 50%;
+                    height: 40px;
+                    margin-bottom: 10%;
+                 }
             }
             .info__btn:hover{
                 transform: scale(1.1);
@@ -289,7 +358,7 @@ z-index:-1;
     }
     .calendar__about{
         height: 50vh;
-        @media (max-width: 768px) {
+        @media (max-width: 1000px) {
            height: 40vh;
         }
         .calendar__about-content{
@@ -298,7 +367,7 @@ z-index:-1;
             display: flex;
             justify-content: space-around;
             gap:4%;
-            @media (max-width: 768px) {
+            @media (max-width: 1000px) {
                width: 90%;
             }
             .calendar__about-text{
@@ -308,9 +377,12 @@ z-index:-1;
             color: rgba(255, 252, 249, 0.786);
             font-family: $FontText;
             font-weight: 50;
-            @media (max-width: 768px) {
+            @media (max-width: 1000px) {
                 font-size: 0.8rem;
             }
+            @media (max-width: 580px) {
+                width: 50%;
+             }
             .calendar__about-text-bould{
                 color: white;
                 font-weight: bolder;
@@ -319,6 +391,9 @@ z-index:-1;
             }
             .calendar__about-text:first-child{
                 text-align: end;
+                @media (max-width: 580px) {
+                    display: none;
+                 }
             }
             .about-img{
                 width: 30%;
@@ -350,7 +425,7 @@ z-index:-1;
         color:rgba(255, 252, 249, 0.786) ;
         font-family: $FontTitle;
         gap:15px;
-        @media (max-width: 768px) {
+        @media (max-width: 1000px) {
             width: 70%;
         }
         .modal__close{
