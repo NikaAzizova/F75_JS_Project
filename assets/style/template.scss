@@ -1,11 +1,25 @@
 //общие стили сюда
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 $FontTitle: '"Noto Sans Display", sans-serif';
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url('/assets/fonts/FiraSans-Regular.woff') format('woff'),
+    url('/assets/fonts/FiraSans-Regular.woff2') format('woff2');
+}
 
 $Yellow : rgba(255, 189, 78, 1);
 $Background:rgba(41, 52, 62, 1);
 $Gray: rgba(255, 255, 255, 0.3);
+$LightGray: rgba(126, 126, 126, 1);
+
 
 
 * {
