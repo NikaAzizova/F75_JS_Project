@@ -1,5 +1,44 @@
 @import './template.scss';
 
+////часть с header
+.header {
+    background: linear-gradient(rgb(41, 52, 62), rgba(41, 52, 62, 0.72), rgb(41, 52, 62));
+
+    .header-wrapper {
+        display: flex;
+        padding-top: 30px;
+        padding-left: 4.9vw;
+        padding-right: 4.5vw;
+
+        .header-icon {
+            flex-basis: 40%;
+        }
+    }
+
+    .list {
+        flex-grow: 1;
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .link {
+
+
+                color: white;
+                text-decoration: none;
+
+            }
+        }
+
+
+    }
+}
+
+//главная страница
+
+
 h1 {
     font-family: 'FiraSans';
     font-weight: 700;
@@ -425,7 +464,205 @@ button {
 
     &__link {
         font-family: 'FiraSans';
-        color: $Yellowad;
+        color: $Yellow;
     }
 }
+
+//часть с блоком с текстами
+
+.container-form {
+    width: 100%;
+    padding-top: 3vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-color: rgb(39, 69, 97);
+    min-height: 90vh;
+    height: 100%; //чтобы контейнер растягивался на ширину контента
+    background-image: url('../images/background.png'), url('../images/mountains.png'), ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    .wrapper-form {
+
+        padding-right: 1vw;
+
+        .cards-form {
+            max-width: 75%;
+            margin: 0 auto;
+            margin-bottom: 7.3vh;
+            padding-top: 70px;
+            display: flex;
+            justify-content: space-between;
+
+            .card-form {
+                max-width: 24vw;
+                color: white;
+                font-weight: lighter;
+
+                .text-bold {
+                    font-weight: 800;
+                    color: white;
+                }
+            }
+
+            .card-form-one {
+                text-align: right;
+
+            }
+        }
+    }
+}
+
+//блок с формой
+
+.block-form {
+    .container-form {
+        padding-bottom: 322px;
+
+        .form-wrapper {
+
+            .form-title {
+                margin-bottom: 70px;
+                text-align: center;
+                color: $form-title;
+
+            }
+
+            .form {
+                padding-left: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .inputs {
+
+                    display: flex;
+                    flex-direction: column;
+
+
+
+                    .input-text,
+                    .input-tel,
+                    .input-email {
+                        width: 40.3vw;
+                        height: 65px;
+                        font-size: 34px;
+                        font-weight: 400;
+                        border: none;
+                        border-radius: 5px;
+
+
+
+
+
+
+                    }
+
+                    .input-text,
+                    .input-tel {
+                        margin-bottom: 21px;
+
+                    }
+                }
+
+                .block-button {
+                    margin-left: 30px;
+
+                    .btn {
+
+                        width: 236px;
+                        height: 61px;
+                        font-size: 23px;
+
+                        border-radius: 5px;
+                        border: none;
+                        transform: rotate(-90deg);
+                        background-color: #FFBD4E;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+//если ошибка при валидации
+.error {
+    box-shadow: 0 0 15px red;
+
+}
+
+.error-input {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: red;
+
+}
+
+.form-message {
+    font-size: 30px;
+    color: #FFBD4E;
+}
+
+//Footer part
+
+.footer {
+    background: $footer-background;
+
+
+    .footer-wrapper {
+        display: flex;
+        padding: 30px 4.5vw 40px 4.9vw;
+
+        .footer-icon {
+            flex-basis: 40%;
+        }
+    }
+
+    .list {
+        flex-grow: 1;
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .link {
+
+
+                color: white;
+                text-decoration: none;
+
+            }
+        }
+
+
+    }
+}
+
+//линия
+.footer-line {
+    padding-left: 3.8vw;
+    padding-right: 3.8vw;
+    margin-bottom: 20px;
+
+    .line {
+        border-bottom: 2px solid $footer;
+
+    }
+}
+
+.text-footer {
+    .footer-text {
+        padding-bottom: 30px;
+        text-align: center;
+        color: $footer-title;
+        font-size: 12px;
+        font-weight: 400;
+        text-decoration: underline;
+    }
+}
+
 
