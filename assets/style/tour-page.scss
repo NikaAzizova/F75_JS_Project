@@ -1,0 +1,548 @@
+@import './template.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+@font-face {
+    font-family: Mark, sans-serif;;
+    src: url(/assets/fonts/tour-page/Marck_Script/);
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.main {
+position: relative;
+z-index: 0;
+height: 7700px;
+background-color: rgb(43, 52, 61);
+font-family: $FontTitle;
+color: #FFFFFF;
+
+    .screensaver {
+    background-image: url(/assets/images/tour-pages/screensaver.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    .screensaver__text-wrapper {
+        align-items: flex-start;
+        padding-left: 212px;
+        padding-top: 306px;
+
+        .screensaver__header {
+            color: white;
+            font-family: $FontTitle;
+            font-size: 70px;
+            font-weight: 700;
+            line-height: 70px;
+        }
+
+        .screensaver__text {
+            color: #FFBD4E;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 91.8px;
+            font-family: "Mark", sans-serif;
+        }
+    }
+    .screensaver__img-wrapper {
+        width: 1082px;
+        height: 249px;
+        padding-left: 288px;
+    }
+}
+.offer {
+    height: 100vh;
+    background-image: linear-gradient(180deg, rgb(43, 52, 61) 0%, rgba(43, 52, 61, 0) 100%), url(/assets/images/tour-pages/screensaver.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .offer__reservation {
+        height: 5vh;
+    }
+
+    .offer__text-wrapper {
+        height: 50vh;
+        padding-top: 5vh;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        font-family: $FontTitle;
+        color: white;
+
+        .offer__text-main {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 3.5rem;
+
+        }
+
+        .offer__text-little {
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 2.4rem;
+            padding-top: 3%;
+            padding-left: 15%;
+            padding-right: 15%;
+
+        }
+    }
+    .offer_circles {
+        padding-left: 25%;
+        width: 50%;
+        display: flex;
+
+        .offer_circle {
+            border-radius: 50%;
+            border: 3px solid #FFBD4E;
+            width: 18vw;
+            height: 30vh;
+            position: absolute;
+            text-align: center;
+
+            .offer_circle-img1 {
+                width: 4vw;
+                height: 8vh;
+                padding-left: 7%;
+                padding-top: 13%;
+            }
+
+            .offer_circle-img2 {
+                width: 5vw;
+                height: 9vh;
+                padding-left: 7%;
+                padding-top: 13%;
+            }
+
+            .offer_circle-img3 {
+                width: 4vw;
+                height: 8vh;
+                padding-left: 7%;
+                padding-top: 13%;
+            }
+
+            .offer_circle-text {
+                font-size: 1.5rem;
+                color: #FFBD4E;
+                padding-top: 5%;
+            }
+
+            .offer_circle-text2 {
+                font-size: 1.5rem;
+                padding-top: 10%;
+                padding-left: 14%;
+            }
+
+            .offer_circle-text3 {
+                padding-top: 10%;
+                font-size: 2rem;
+            }
+
+            .offer_circle-text4 {
+                padding-top: 10%;
+                padding-left: 10%;
+                padding-right: 10%;
+                font-size: 1rem;
+            }
+        }
+
+        .offer_circle:nth-child(1) {
+            top: 156vh;
+            left: 22vw;
+        }
+
+        .offer_circle:nth-child(2) {
+            left: 38vw;
+            top: 156vh;
+        }
+
+        .offer_circle:nth-child(3) {
+            left: 54vw;
+            top: 156vh;
+        }
+    }
+
+    .offer__img-wrapper {
+        width: 10vw;
+        height: 10vh;
+        position: absolute;
+        left: 47vw;
+        padding-top: 40vh;
+    }
+}
+.expectation {
+    height: 100vh;
+    color: #FFFFFF;
+    display: flex;
+    text-align: left;
+
+    .expectation__text-wrapper {
+        padding-left: 10%;
+        padding-top: 5%;
+
+        .expectation__header {
+            font-family: "Mark", sans-serif;
+            font-size: 4rem;
+        }
+
+        .expectation__text {
+            width: 45vw;
+            font-size: 1.6rem;
+            font-weight: 400;
+            border-bottom: 3px solid #FFBD4E;
+            padding-bottom: 1vh;
+            padding-top: 3%;
+        }
+
+        .expectation__lil-text {
+            padding-top: 5%;
+            font-size: 1rem;
+            line-height: 1rem;
+            font-weight: 200;
+            padding-bottom: 5%;
+            
+            .expectation__ul {
+                list-style-image: url('/assets/images/tour-pages/pup.png');
+                font-size: 1rem;
+                line-height: 2.5;
+                padding-top: 10%;
+                width: 28vw;
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                padding-left: 1.5vw;
+            }
+
+            .expectation__ul li {
+                margin-bottom: 10px;
+                line-height: 1;
+            }
+        }
+
+        .expectation__end-text {
+            color: #FFBD4E;
+            font-size: 1rem;
+            line-height: 22.4px;
+            text-transform: uppercase;
+            width: 40vw;
+        }
+    }
+
+    .expectation__card {
+        display: inline;
+        padding-top: 10vh;
+        padding-left: 10vw;
+
+        .expectation__card-line {
+            position: absolute;
+            left: 64vw;
+        }
+
+        .expectation__card-img {
+            border-radius: 20px;
+        }
+
+        .expectation__card-littletext {
+            font-size: 0.8rem;
+            line-height: 1rem;
+            padding-top: 5%;
+        }
+
+        .expectation__card-name {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            padding-top: 5%;
+        }
+
+        .expectation__card-text {
+            line-height: 1.5rem;
+            font-size: 1rem;
+            width: 30vw;
+            padding-top: 3%;
+        }
+    }
+}
+
+.top {
+    height: 80vh;
+    color: #FFFFFF;
+    display: flex;
+
+    .top__left-block {
+        padding-left: 10%;
+        width: 40%;
+
+        .top__header {
+            font-size: 2rem;
+            font-family: "Mark", sans-serif;
+            line-height: 3rem;
+        }
+
+        .top__list {
+            font-size: 1rem;
+            font-weight: 200;
+            line-height: 1.8rem;
+        }
+    }
+}
+
+.plan-of-day {
+    height: 100vh;
+    .plan-of-day__text-wrapper {
+        height: 40vh;
+        padding-left: 5vw;
+
+        .plan-of-day__header {
+            color: rgba(255, 255, 255, 0.05);
+            font-size: 10rem;
+            line-height: 16rem;
+            font-weight: 800;
+        }
+
+        .plan-of-day__text {
+            position: absolute;
+            font-size: 3rem;
+            left: 15vw;
+        }
+    } 
+
+    .plan-of-day__block {
+        height: 100vh;
+        position: relative;
+        .plan-of-day__images {
+            padding-top: 10vh;
+            width: 100%;
+            height: 20vh;
+        }
+
+        .plan-of-day__square {
+            width: 40vw;
+            height: 90vh;
+            position: absolute;
+            left: 50vw;
+            bottom: 10vh;
+            background-color: rgb(43, 52, 61, 0.7);
+
+            .plan-of-day__inter {
+                width: 80%;
+                height: 80%;
+                margin: 10%;
+                border: 3px dotted #FFBD4E;
+
+                .plan-of-day__square-header {
+                    font-size: 3rem;
+                    text-align: center;
+                    padding-top: 3vh;
+    
+                }
+                .plan-of-day__square-date {
+                    width: 20vw;
+                    padding-left: 3vw;
+                    .plan-of-day__square-date-img {
+                        width: 10vw;
+                    }
+                    .plan-of-day__square-text- {
+                        font-size: 1rem;
+                    }
+                }
+
+                .plan-of-day__square-text {
+                    font-size: 1rem;
+                    line-height: 1.8rem;
+                    padding-left: 3vw;
+                    padding-right: 3vw;
+                    font-weight: 200;
+                }
+
+                .plan-of-day__square-list {
+                    list-style-image: url('/assets/images/tour-pages/pup.png');
+                    font-size: 1rem;
+                    line-height: 1rem;
+                    padding-left: 4vw;
+                }
+                .plan-of-day__square-circle {
+                    width: 8vw;
+                    height: 14vh;
+                    font-size: 1rem;
+                    border-radius: 50%;
+                    background-color: #FFBD4E;
+                    margin-left: 30vw;
+
+                    .plan-of-day__square-circle-text {
+                        padding-left: 2.5vw;
+                        padding-top: 1vh;
+                    }
+                    .plan-of-day__square-circle-number {
+                        font-weight: 700;
+                        font-size: 5rem;
+                        padding-left: 1.5vw;
+                        padding-top: 1vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.plan-of-day2 {
+    padding-top: 30vh;
+    .plan-of-day2__block {
+        height: 100vh;
+        position: relative;
+        .plan-of-day2__images {
+            padding-top: 10vh;
+            width: 100%;
+            height: 20vh;
+        }
+
+        .plan-of-day2__square {
+            width: 40vw;
+            height: 90vh;
+            position: absolute;
+            left: 50vw;
+            bottom: 10vh;
+            background-color: rgb(43, 52, 61, 0.7);
+
+            .plan-of-day2__inter {
+                width: 80%;
+                height: 80%;
+                margin: 10%;
+                border: 3px dotted #FFBD4E;
+
+                .plan-of-day2__square-header {
+                    font-size: 3rem;
+                    text-align: center;
+                    padding-top: 3vh;
+    
+                }
+                .plan-of-day2__square-date {
+                    width: 20vw;
+                    padding-left: 3vw;
+                    .plan-of-day2__square-date-img {
+                        width: 3vw;
+                    }
+                    .plan-of-day2__square-text- {
+                        font-size: 1rem;
+                    }
+                }
+
+                .plan-of-day2__square-text {
+                    font-size: 1rem;
+                    line-height: 1.8rem;
+                    padding-left: 3vw;
+                    padding-right: 3vw;
+                    font-weight: 200;
+                }
+
+                .plan-of-day2__square-list {
+                    list-style-image: url('/assets/images/tour-pages/pup.png');
+                    font-size: 1rem;
+                    line-height: 1rem;
+                    padding-left: 4vw;
+                }
+                .plan-of-day2__square-circle {
+                    width: 8vw;
+                    height: 14vh;
+                    font-size: 1rem;
+                    border-radius: 50%;
+                    background-color: #FFBD4E;
+                    margin-left: 30vw;
+
+                    .plan-of-day2__square-circle-text {
+                        padding-left: 2.5vw;
+                        padding-top: 1vh;
+                    }
+                    .plan-of-day2__square-circle-number {
+                        font-weight: 700;
+                        font-size: 5rem;
+                        padding-left: 1vw;
+                        padding-top: 1vh;
+                    }
+                }
+            }
+        }
+    }
+}
+.plan-of-day3 {
+    padding-top: 30vh;
+    .plan-of-day3__block {
+        height: 100vh;
+        position: relative;
+        .plan-of-day3__images {
+            padding-top: 10vh;
+            width: 100%;
+            height: 20vh;
+        }
+
+        .plan-of-day3__square {
+            width: 40vw;
+            height: 90vh;
+            position: absolute;
+            left: 50vw;
+            bottom: 10vh;
+            background-color: rgb(43, 52, 61, 0.7);
+
+            .plan-of-day3__inter {
+                width: 80%;
+                height: 80%;
+                margin: 10%;
+                border: 3px dotted #FFBD4E;
+
+                .plan-of-day3__square-header {
+                    font-size: 3rem;
+                    text-align: center;
+                    padding-top: 3vh;
+    
+                }
+                .plan-of-day3__square-date {
+                    width: 20vw;
+                    padding-left: 3vw;
+                    .plan-of-day3__square-date-img {
+                        width: 10vw;
+                    }
+                    .plan-of-day3__square-text- {
+                        font-size: 1rem;
+                    }
+                }
+
+                .plan-of-day3__square-text {
+                    font-size: 1rem;
+                    line-height: 1.8rem;
+                    padding-left: 3vw;
+                    padding-right: 3vw;
+                    font-weight: 200;
+                }
+
+                .plan-of-day3__square-list {
+                    list-style-image: url('/assets/images/tour-pages/pup.png');
+                    font-size: 1rem;
+                    line-height: 1rem;
+                    padding-left: 4vw;
+                }
+                .plan-of-day3__square-circle {
+                    width: 8vw;
+                    height: 14vh;
+                    font-size: 1rem;
+                    border-radius: 50%;
+                    background-color: #FFBD4E;
+                    margin-left: 30vw;
+
+                    .plan-of-day3__square-circle-text {
+                        padding-left: 2.5vw;
+                        padding-top: 1vh;
+                    }
+                    .plan-of-day3__square-circle-number {
+                        font-weight: 700;
+                        font-size: 5rem;
+                        padding-left: 1vw;
+                        padding-top: 1vh;
+                    }
+                }
+            }
+        }
+    }
+}
+.highlight {
+    color: #FFBD4E;
+}
+}
+

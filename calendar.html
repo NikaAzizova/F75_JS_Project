@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html  lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,11 +18,10 @@
             </div>
             <div class="calendar__lingua-box">
                 <div class="calendar__lingua-content">
-                    <img class="calendar__line" src="./assets/images/calendar/Line 43.svg" alt="line">
-                    <span class="lingua lingua-tw">TW</span>
-                    <span class="lingua lingua-fb">FB</span>
-                    <span class="lingua lingua-ig">IG</span>
-                    <img class="calendar__line" src="./assets/images/calendar/Line 43.svg" alt="line">
+                    <img class="calendar__line" src="./assets/images/calendar/Line 43.svg" alt="line" />
+                    <span id="lingua-en" class="lingua lingua-en">EN</span>
+                    <span id="lingua-ru" class="lingua lingua-ru">RU</span>
+                    <img class="calendar__line" src="./assets/images/calendar/Line 43.svg" alt="line" />
                 </div>
             </div>
         </section>
@@ -31,23 +29,67 @@
             <div class="calendar__month">
                 <hr class="calendar__line-month" />
                 <div class="month__btns">
-                    <button class="month__btn btn-prev"><img src="./assets/images/calendar/circle.svg" class="circle" alt="img"></button>
-                    <button class="month__btn btn-active">
-                        <img src="./assets/images/calendar/active.png" class="circle-active" alt="img"> 
-                        <img src="./assets/images/calendar/circle.svg" class="circle" alt="img"> </button>
-                    <button class="month__btn btn-next"><img src="./assets/images/calendar/circle.svg" class="circle" alt="img"></button>
+                    <button id="btn__prev" class="month__btn btn-prev"><img src="./assets/images/calendar/circle.svg" class="circle"
+                            alt="img" /></button>
+                    <button id="btn__active" class="month__btn btn-active">
+                        <img src="./assets/images/calendar/active.png" class="circle-active" alt="img" />
+                        <img src="./assets/images/calendar/circle.svg" class="circle" alt="img" /> </button>
+                    <button id="btn__next" class="month__btn btn-next"><img src="./assets/images/calendar/circle.svg" class="circle"
+                            alt="img" /></button>
                 </div>
                 <div class="calendar__info-month">
-                    <p class="month month-prev">ФЕВРАЛЬ</p>
-                    <p class="month month-now">МАРТ</p>
-                    <p class="month month-next">АПРЕЛЬ</p>
+                    <p id="month-prev" class="month month-prev"></p>
+                    <p id="month-now" class="month month-now"></p>
+                    <p id="month-next" class="month month-next"></p>
                 </div>
             </div>
-            <div class="calendar__info-content">
-                
+            <div class="calendar__info-content-box">
+                <div  class="calendar__info-content">
+                        <a link href="#" id="link__learn-more" class="info__link">Узнать больше  <img class="info-link__arrow" src="./assets/images/calendar/arrow.svg" alt="i" /></a>
+                        <div id="result" class="info__content-box">
+
+                        </div>
+                        <button id="info__btn" class="info__btn" type="button">Забронировать</button>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="calendar__about">
+            <div class="calendar__about-content">
+                <p class="calendar__about-text"><span class="calendar__about-text-bould">Мы строим маршрут</span> так,
+                    чтобы за неделю показать самые интересные места региона. Включаем в программу только лучшее
+                    проживание, транспорт, питание, людей и достопримечательности.<span
+                        class="calendar__about-text-bould"> Работаем с группами</span> до 10 человек и лично их
+                    сопровождаем.</p>
+                <img class="about-img" src="./assets/images/calendar/sidesOfWord.png" alt="img" />
+                <p class="calendar__about-text"><span class="calendar__about-text-bould">Мы строим маршрут</span> так,
+                    чтобы за неделю показать самые интересные места региона. Включаем в программу только лучшее
+                    проживание, транспорт, питание, людей и достопримечательности.<span
+                        class="calendar__about-text-bould"> Работаем с группами</span> до 10 человек и лично их
+                    сопровождаем.</p>
             </div>
         </section>
     </main>
+    <div id="modal" class="modal">
+        <form name="confirmForm" class="modal__content" novalidate>
+            <span class="modal__close">&#215;</span>
+            <h2 class="modal__title">Вы выбрали тур: <span id="modal__title-name" class="modal__title-name"></span></h2>
+            <p class="modal__subtitle">Даты поездки: <span id="modal__title-datas" class="modal__title-datas"></span></p>
+            <div class="count__peopls-box">
+            <label class="count__people" for="count__people">Выберите количество человек: </label>
+            <input name="number" type="number" min="1" max="5" id="count__people" class="count__people-input"   placeholder="1" required/>
+        </div>
+            <div class="modal__inputs">
+                <input id="name" name="name" type="text" class="input" placeholder="Введите ваше имя и фамилию" required />
+                <input id="tel" name="tel" type="tel" class="input" placeholder="Введите ваш номер телефона" required/>
+                <input id="email" name="email" type="email" class="input" placeholder="Введите ваш email" required/>
+            </div>
+            <p class="modal__price">Общая сумма тура составляет : <span id="modal__price-sum" class="modal__price-sum"></span></p>
+            <button type="submit" id="confirmBtn" class="confirm__btn">Забронировать</button>
+        </form>
+    </div>
 </body>
+<script type="module" src="./src/calendar/index.js"></script>
+
 
 </html>
