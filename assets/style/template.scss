@@ -4,6 +4,10 @@
 
 $FontTitle: "Noto Sans Display", sans-serif;
 $FontText: "Montserrat", sans-serif;
+$Mobile-max: "(max-width: 540px)";
+$Mobile: "(max-width: 430px)";
+$Tablet:"(max-width: 1024px)" ;
+$Tablet-min:"(max-width: 1000px)";
 
 @font-face {
     font-family: 'Montserrat';

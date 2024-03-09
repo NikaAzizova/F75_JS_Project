@@ -8,8 +8,25 @@
 </head>
 
 <body>
-    <header>
-
+    <header class="block-header header">
+        <div class="block-header__wrapper header-wrapper">
+            <!--icon-->
+            <div class="block-header__icon header-icon">
+                <img class="icon" src="./assets/images/icon-header.png" alt="icon Generation">
+            </div>
+            <div class="menu__gamb">
+                <img class="gamb__icon" src="https://img.icons8.com/ios-filled/50/FAB005/menu--v1.png" alt="menu--v1"/>
+            </div>
+            
+            <div class="block-header__lists list">
+                <nav class="block-header__nav nav">
+                    <a class="link" href="/index.html">ГЛАВНАЯ СТРАНИЦА</a>
+                    <a class="link" href="/tour-page.html">СТРАНИЦА ТУРА</a>
+                    <a class="link" href="#">КОНТАКТЫ</a>
+                </nav>
+            </div>
+        
+        </div>
     </header>
     <main class="calendar__page">
         <section class="calendar">
@@ -69,7 +86,58 @@
                     сопровождаем.</p>
             </div>
         </section>
+        <section class="calendar__form">
+            <div class="block-form">
+                <div class="block-form__wrapper form-wrapper">
+                    <!--Заголовок-->
+                    <h3 class="block-form__title form-title">МЫ ВСЕГДА НА СВЯЗИ!</h3>
+                    <!--сама форма-->
+                    <form action="#" class="block-form__form form" id="form">
+                        <div class="block-form__inputs inputs">
+                            <div class="error-input" id="error-name"></div>
+                            <input class="input-text  name" type="text" name="name" id="name"
+                                placeholder="ваше имя">
+                            <div class="error-input" id="error-telephone"></div>
+                            <input class="input-tel  telephone" type="num" name="telephone" id="telephone"
+                                placeholder="ваш номер телефона">
+                            <div class="error-input" id="error-email"></div>
+                            <input class="input-email email" type="email" name="email" id="email"
+                                placeholder="ваша электронная почта">
+                            <div class="form-message" id="form-message"></div>
+                        </div>
+                        <div class="block-button">
+                            <button class="btn" type="submit" id="btn">отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="block-footer footer">
+        <div class="block-footer__wrapper footer-wrapper">
+            <!--icon-->
+            <div class="block-footer__icon footer-icon">
+                <img class="icon" src="./assets/images/icon-header.png" alt="icon Generation">
+            </div>
+            <!--the list of links-->
+            <div class="block-footer__lists list">
+                <nav class="block-footer__nav nav">
+                    <a class="link" href="#">ГЛАВНАЯ СТРАНИЦА</a>
+                    <a class="link" href="./tour-page.html">СТРАНИЦА ТУРА</a>
+                    <a class="link" href="./calendar.html">КАЛЕНДАРЬ</a>
+                    <a class="link" href="#">КОНТАКТЫ</a>
+                </nav>
+            </div>
+        </div>
+        <!--Часть с линией-->
+        <div class="block-footer__line  footer-line">
+            <div class="block-footer__line line"></div>
+        </div>
+        <!--Часть с текстом внизу страницы под линией-->
+        <div class="block-footer__text text-footer">
+            <p class="footer-text">Политика обработки персональных данных</p>
+        </div>
+      </footer>
     <div id="modal" class="modal">
         <form name="confirmForm" class="modal__content" novalidate>
             <span class="modal__close">&#215;</span>
