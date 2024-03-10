@@ -1,4 +1,6 @@
 //Главная страница
+
+
 import {
     nameInput,
     emailInput,
@@ -98,3 +100,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 })
+
+//бургер меню
+
+import {makeBurgerMenuVisible, makeBurgerDisapear} from './functions';
+import{burgetIcon,burgerCross} from './vars';
+
+burgetIcon.addEventListener('click', makeBurgerMenuVisible);
+
+burgerCross.addEventListener('click' ,makeBurgerDisapear);
