@@ -7,15 +7,42 @@
     <link rel="stylesheet" href="./assets/style/tour-page.scss">
 </head>
 <body>
-    <header class="header"></header>
+    <header class="block-header header">
+            <div class="block-header__wrapper header-wrapper">
+                <!--icon-->
+                <div class="block-header__icon header-icon">
+                    <img class="icon" src="./assets/images/icon-header.png" alt="icon Generation">
+                </div>
+                <div class="block-header__lists list">
+                    <nav class="block-header__nav nav">
+                        <a class="link" href="/index.html">ГЛАВНАЯ СТРАНИЦА</a>
+                        <a class="link" href="/tour-page.html">СТРАНИЦА ТУРА</a>
+                        <a class="link" href="#">КОНТАКТЫ</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="burger-menu">
+                <img class="gamb__icon" id="burger-img"  src="https://img.icons8.com/ios-filled/50/FAB005/menu--v1.png" alt="menu--v1"/>
+                    <div class="burger-menu__nav-wrapper nav-wrapper" id="nav-wrapper">
+                <nav class="burger-menu__nav menu-nav">
+                    <div class="burger-menu__cross menu-cross" id="cross"><span class="cross">X</span></div>
+    
+                    <a class="burger-menu__link menu-link" href="#">ГЛАВНАЯ СТРАНИЦА</a>
+                    <span class="burger-menu__line line"></span>
+                    <a class="burger-menu__link menu-link " href="/tour-page.html">СТРАНИЦА ТУРА</a>
+                    <span class="burger-menu__line line"></span>
+                    <a class="burger-menu__link menu-link" href="./calendar.html">КАЛЕНДАРЬ</a>
+                    <span class="burger-menu__line line"></span>
+                    <a class="burger-menu__link menu-link" href="#">КОНТАКТЫ</a>
+                </nav>
+            </div>
+        </div>
+        </header>
     <main class="main">
         <section class="screensaver">
             <div class="screensaver__text-wrapper">
                 <h1 class="screensaver__header">СЕВЕРНЫЙ ПАКИСТАН</h1>
                 <div class="screensaver__text">на джипах</div>
-            </div>
-            <div class="screensaver__img-wrapper">
-                <img class="screensaver__img" src="./assets/images/tour-pages/screensaver2.png" alt="">
             </div>
         </section>
         <section class="offer">
@@ -92,23 +119,6 @@
                 <div class="expectation__card-littletext">Научный руководитель путешествия морский биолог</div>
                 <div class="expectation__card-name">Владимир <span class="highlight">Вертянкин</span></div>
                 <div class="expectation__card-text">Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации.</div>
-            </div>
-        </section>
-        <section class="top">
-            <div class="top__left-block">
-            <div class="top__header"><span class="highlight">Топ-5</span> впечатлений этого путешествия:</div>
-            <div class="top__list">
-                <ol class="top-ol">
-                    <li>Вы пересечете самый широкий на Земле пролив Дрейка и получите медную серьгу, которую в Англии имели право носить лишь моряки, преодолевшие этот легендарный пролив</li>
-                    <li>Пройдете по Антарктическому проливу через «Аллею айсбергов» — в этом месте ледяные замки достигают высоты с многоэтажный дом</li>
-                    <li>Увидите вблизи колонии 3 видов пингвинов: папуанский, Адели и антарктический — в период, когда появляются детеныши</li>
-                    <li>В проливе Жерлаш встретите тюленей и морских леопардов, и если повезет, сможете сфотографировать хвост горбатого кита или прыжок финвала</li>
-                    <li>Сможете искупаться в Южном океане, температура которого колеблется от -2 до +10°С</li>
-                </ol>
-            </div>
-            </div>
-            <div class="top__right-block">
-                <img src="./assets/images/tour-pages/top.png" alt="">
             </div>
         </section>
         <section class="plan-of-day">
