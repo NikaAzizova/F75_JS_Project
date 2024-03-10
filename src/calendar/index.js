@@ -11,14 +11,14 @@ import {
     errorName,
     errorEmail,
     errorTelephone,
-    formMessage
+    formMessage,burgetIcon,burgerCross
 } from "./vars";
 import {
     validateEmail,
     validateName,
     validatePerson,
     validateTel,
-    generalError
+    generalError,makeBurgerMenuVisible,makeBurgerDisapear
 } from "./functions";
 
 const dataNew = new Date();
@@ -276,3 +276,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return regexTel.test(phone);
     }
 })
+
+burgetIcon.addEventListener('click', makeBurgerMenuVisible);
+
+burgerCross.addEventListener('click' ,makeBurgerDisapear);

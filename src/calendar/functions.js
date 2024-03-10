@@ -1,4 +1,5 @@
 import { name,tel,email,number } from "./vars";
+import {navWrapper} from './vars';
 
 export let generalError = function(text){
     let error = document.createElement('div');
@@ -66,4 +67,11 @@ export function validateTel(){
         tel.after(error);
         hasError = true;
     }
+}
+export function makeBurgerMenuVisible(){
+    navWrapper.style.display ='block';
+}
+
+export function makeBurgerDisapear(){
+    navWrapper.style.display ='none';
 }
