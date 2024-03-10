@@ -2,13 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
-
 $FontTitle: "Noto Sans Display", sans-serif;
 $FontText: "Montserrat", sans-serif;
+$Mobile-max: "(max-width: 540px)";
+$Mobile: "(max-width: 430px)";
+$Tablet:"(max-width: 1024px)" ;
+$Tablet-min:"(max-width: 1000px)";
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'FiraSans';
+    src: url('/assets/fonts/FiraSans-Regular.woff') format('woff'),
+    url('/assets/fonts/FiraSans-Regular.woff2') format('woff2');
+}
 
 $Yellow : rgba(255, 189, 78, 1);
 $Background:rgba(41, 52, 62, 1);
 $Gray: rgba(255, 255, 255, 0.3);
+$LightGray: rgba(126, 126, 126, 1);
+
 
 
 * {
@@ -17,4 +33,13 @@ $Gray: rgba(255, 255, 255, 0.3);
     padding: 0;
 }
 
-
+$form-title: rgb(255, 252, 249);
+$inputs-text: rgba(255, 255, 255, 0.31);
+$footer-background:black;
+$footer-title:rgb(255, 255, 255);
+$footer:rgba(255, 255, 255, 0.42);
+///////////
+$burger-menu-color: white;
+$burger-elements: rgb(217, 70, 62);
+$hover-color:rgb(216, 86, 42);
+//////////
