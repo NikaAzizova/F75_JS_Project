@@ -23,9 +23,13 @@
             align-items: center;
             justify-content: space-between;
 
+            @media #{$Tablet} {
+                display: none;
+            }
+
             .link {
 
-
+                font-family: $FontText;
                 color: white;
                 text-decoration: none;
 
@@ -35,6 +39,73 @@
 
     }
 }
+
+//бургер меню
+.burger-menu {
+    display: none;
+
+    @media #{$Tablet} {
+        display: block;
+        position: relative;
+
+        .burger-img {
+            max-width: 50px;
+        }
+
+        .nav-wrapper {
+            display: none;
+
+            .menu-nav {
+
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                z-index: 1;
+                right: 2px;
+
+                width: 200px;
+                background-color: $Yellow;
+
+                .menu-cross {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: 10px 10px 5px 0;
+                    font-size: 20px;
+                    color: $burger-elements;
+                }
+
+                .menu-link {
+                    margin-bottom: 30px;
+                    padding-left: 10px;
+                    text-decoration: none;
+                    font-family: $FontText;
+                    color: $burger-menu-color;
+                }
+
+                .menu-link:hover {
+                    color: $hover-color;
+
+                }
+
+                //линия
+                .line {
+                    border: 1px solid $burger-elements;
+                    width: 180px;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                }
+
+                .menu-link:first-child {
+                    padding-top: 20px;
+                }
+            }
+        }
+
+    }
+
+}
+
+
 
 //главная страница
 
@@ -93,7 +164,7 @@ button {
     font-family: 'Montserrat';
 }
 
-.soсial > a {
+.soсial>a {
     font-size: 1rem;
     text-decoration: none;
     color: white;
@@ -103,7 +174,7 @@ button {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 50%), url('/assets/images/index/Subtract.png');
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 
     &__day {
         font-family: 'FiraSans';
@@ -129,43 +200,43 @@ button {
 }
 
 .page2_intro {
-        padding: 7.3125rem 12.5rem 0 0rem;
+    padding: 7.3125rem 12.5rem 0 0rem;
     display: grid;
     grid-template-columns: 14% 86%;
 
 
-        &__h2 {
-            text-align: center;
-        }
-
-        &__color {
-            color: $Yellow;
-        }
-
-        &__buttons {
-            display: flex;
-            justify-content: space-between;
-            padding: 3.1875rem 0 4.5rem 0;
-            gap: 1.25rem;
-        }
-
-        &__buttons > button {
-            width: 100%;
-            height: 4.875rem;
-            border-radius: 1rem;
-            background-color: $Background;
-            border: 1px solid $Yellow;
-            color: white;
-            font-size: 1.5rem;
-            text-align: left;
-            padding-left: 1.25rem;
-            font-weight: 700;
-        }
-
-        &__colorwhite {
-            color: white;
-        }
+    &__h2 {
+        text-align: center;
     }
+
+    &__color {
+        color: $Yellow;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        padding: 3.1875rem 0 4.5rem 0;
+        gap: 1.25rem;
+    }
+
+    &__buttons>button {
+        width: 100%;
+        height: 4.875rem;
+        border-radius: 1rem;
+        background-color: $Background;
+        border: 1px solid $Yellow;
+        color: white;
+        font-size: 1.5rem;
+        text-align: left;
+        padding-left: 1.25rem;
+        font-weight: 700;
+    }
+
+    &__colorwhite {
+        color: white;
+    }
+}
 
 .page2_content {
     display: flex;
@@ -180,8 +251,8 @@ button {
 }
 
 .img_view {
-   width: 36.875em;
-   height: auto;
+    width: 36.875em;
+    height: auto;
 }
 
 .page2_bottom {
@@ -208,7 +279,7 @@ button {
         padding-bottom: 11rem;
     }
 
-    &__img > img {
+    &__img>img {
         width: 7.5rem;
         height: fit-content;
     }
@@ -284,7 +355,7 @@ button {
         color: $Yellow;
     }
 
-    &__textpadding{
+    &__textpadding {
         padding-top: 0.9375rem;
         width: 30.3125rem;
     }
@@ -358,7 +429,7 @@ button {
     padding-bottom: 9.4375rem;
 }
 
-.gids > div {
+.gids>div {
     display: flex;
     flex-direction: column;
 }
@@ -366,7 +437,7 @@ button {
 .gidsimg {
     width: 13.75rem;
     height: 19.8125rem;
-    
+
 }
 
 .gidsimg:hover {
@@ -375,7 +446,7 @@ button {
     transform: scale(1.1);
 }
 
-.gidsname{
+.gidsname {
     color: white;
     text-transform: uppercase;
     font-family: 'Montserrat';
@@ -495,7 +566,12 @@ button {
             padding-top: 70px;
             display: flex;
             justify-content: space-between;
-
+            .about-img {
+                margin: 0 0.5vw 0 0.5vw;
+                max-width: 30%;
+                height: auto;
+                opacity: 0.5;
+            }
             .card-form {
                 max-width: 24vw;
                 color: white;
@@ -527,6 +603,13 @@ button {
                 margin-bottom: 70px;
                 text-align: center;
                 color: $form-title;
+                font-family: $FontText;
+                font-size: 2rem;
+
+                @media  #{$Mobile-max} {
+                    font-size: 1.5rem;
+                    margin-top: 15%;
+                }
 
             }
 
@@ -537,7 +620,6 @@ button {
                 align-items: center;
 
                 .inputs {
-
                     display: flex;
                     flex-direction: column;
 
@@ -546,18 +628,23 @@ button {
                     .input-text,
                     .input-tel,
                     .input-email {
+                        background-color: rgba(210, 210, 210, 0.3);
                         width: 40.3vw;
                         height: 65px;
-                        font-size: 34px;
-                        font-weight: 400;
                         border: none;
                         border-radius: 5px;
+                        font-family: $FontText;
+                        padding-left: 10px;
+                        font-size: 1.5rem;
+                    }
 
-
-
-
-
-
+                    .input-text::placeholder,
+                    .input-tel::placeholder,
+                    .input-email::placeholder {
+                        color: white;
+                        font-family: $FontText;
+                        padding-left: 30px;
+                        font-size: 1rem;
                     }
 
                     .input-text,
@@ -580,6 +667,9 @@ button {
                         border: none;
                         transform: rotate(-90deg);
                         background-color: #FFBD4E;
+                        font-family: $FontTitle;
+                        font-size: 1rem;
+                        font-weight: bolder;
 
                     }
                 }
@@ -629,9 +719,13 @@ button {
             align-items: center;
             justify-content: space-between;
 
+            @media #{$Tablet} {
+                display: none;
+            }
+
             .link {
 
-
+                font-family: $FontText;
                 color: white;
                 text-decoration: none;
 
@@ -659,10 +753,9 @@ button {
         padding-bottom: 30px;
         text-align: center;
         color: $footer-title;
+        font-family: $FontText;
         font-size: 12px;
         font-weight: 400;
         text-decoration: underline;
     }
 }
-
-
