@@ -654,7 +654,7 @@ body {
                                 font-family: $FontText;
                                 @media #{$Mobile-max} {
                                 width: 100%;
-                                 }
+                                }
                             }
 
                             .input-text::placeholder,
@@ -722,7 +722,7 @@ body {
             display: flex;
             padding: 30px 4.5vw 40px 4.9vw;
             @media #{$Mobile-max} {
-         margin-left: 18%;
+        margin-left: 18%;
             }
 
             .footer-icon {
@@ -733,7 +733,7 @@ body {
         .list {
             flex-grow: 1;
             @media  #{$Mobile-max} {
-         display: none;
+        display: none;
             }
 
             .nav {

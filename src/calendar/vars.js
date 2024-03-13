@@ -24,4 +24,3 @@ export const formMessage = document.getElementById('form-message');
 export const burgetIcon = document.getElementById('burger-img');
 export const burgerCross = document.getElementById('cross');
 export const navWrapper = document.getElementById('nav-wrapper');
-   

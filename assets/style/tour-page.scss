@@ -8,11 +8,120 @@
     font-weight: 400;
 }
 
+.header {
+    background: transparent;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    width: 100%;
+    .header-wrapper {
+        display: flex;
+        padding-top: 30px;
+        padding-left: 4.9vw;
+        padding-right: 4.5vw;
+        @media  #{$Mobile-max} {
+            justify-content: space-between;
+        }
+
+        .header-icon {
+            flex-basis: 40%;
+        }
+
+    .list {
+        flex-grow: 1;
+        @media  #{$Mobile-max} {
+        display: none;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media #{$Tablet} {
+                display: none;
+            }
+
+            .link {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.burger-menu {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    right: 5%;
+    @media #{$Tablet} {
+        display: block;
+    }
+
+    .gamb__icon{
+        width: 40px;
+        cursor: pointer;
+    }
+
+        .nav-wrapper {
+            display: none;
+
+            .menu-nav {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                z-index: 1;
+                right: -35px;
+                width: 300px;
+                height: fit-content;
+                background-color: $Background;
+
+                .menu-cross {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: 20px 30px 10px 0px;
+                    font-size: 30px;
+                    color: $Yellow;
+                    cursor: pointer;
+                }
+
+                .menu-link {
+                    margin-bottom: 30px;
+                    padding-left: 30px;
+                    text-decoration: none;
+                    font-family: $FontText;
+                    color: $burger-menu-color;
+                }
+
+                .menu-link:hover {
+                    color: $Yellow;
+
+
+                }
+
+                //линия
+                .line {
+                    border: 1px solid $Yellow;
+                    width: 95%;
+                    opacity: 0.5;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                }
+
+                .menu-link:first-child {
+                    padding-top: 20px;
+                }
+            }
+        }
+
+    }
+
+}
 
 .main {
 position: relative;
 z-index: 0;
-height: 7700px;
 background-color: rgb(43, 52, 61);
 font-family: $FontTitle;
 color: #FFFFFF;
@@ -25,22 +134,26 @@ color: #FFFFFF;
 
     .screensaver__text-wrapper {
         align-items: flex-start;
-        padding-left: 212px;
-        padding-top: 306px;
+        padding-left: 16vw;
+        padding-top: 50vh;
 
         .screensaver__header {
             color: white;
             font-family: $FontTitle;
-            font-size: 70px;
+            font-size: 6rem;
             font-weight: 700;
-            line-height: 70px;
+            @media  #{$Mobile-max} {
+            font-size: 3rem;
+            }
+            @media #{$Mobile} {
+            font-size: 3rem;
+            }
         }
 
         .screensaver__text {
             color: #FFBD4E;
             font-weight: 400;
-            font-size: 50px;
-            line-height: 91.8px;
+            font-size: 3rem;
             font-family: "Mark", sans-serif;
         }
     }
@@ -57,7 +170,48 @@ color: #FFFFFF;
     background-size: cover;
 
     .offer__reservation {
-        height: 5vh;
+        height: 20vh;
+        width: 100%;
+        background-color:  rgba(128, 128, 128, 0.2);
+
+        .offer__reservation-text {
+            display: flex;
+            padding-left: 20vw;
+            padding-top: 3vh;
+
+            .offer__reservation-text-main {
+                font-size: 1.5rem;
+            }
+
+            .offer__reservation-text-lil {
+                font-size: 0.8rem;
+                padding-left: 8vw;
+                padding-top: 1%;
+                color: $Gray;
+            }
+        }
+
+        .offer__reservation-inputs {
+            display: flex;
+            padding-left: 8vw;
+            padding-top: 2vh;
+
+            .offer__reservation-input {
+                border-radius: 20px;
+                background-color: #FFFFFF;
+                width: 20vw;
+                height: 4vh;
+                padding-left: 5vw;
+                padding-right: 5vw;
+                font-size: 0.8rem;
+            }
+
+            .offer__reservation-button {
+                background-color: #FFBD4E;
+                border-radius: 20px;
+                width: 20vw;
+            }
+        }
     }
 
     .offer__text-wrapper {
@@ -73,11 +227,20 @@ color: #FFFFFF;
             font-size: 2.5rem;
             font-weight: 700;
             line-height: 3.5rem;
-
+            @media  #{$Mobile-max} {
+                font-size: 1.5rem;
+                font-weight: 300;
+                line-height: 2rem;
+            }
+            @media #{$Mobile} {
+                font-size: 1.5rem;
+                font-weight: 300;
+                line-height: 2rem;
+            }
         }
 
         .offer__text-little {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 400;
             line-height: 2.4rem;
             padding-top: 3%;
@@ -94,30 +257,67 @@ color: #FFFFFF;
         .offer_circle {
             border-radius: 50%;
             border: 3px solid #FFBD4E;
-            width: 18vw;
-            height: 30vh;
+            width: 17vw;
+            height: 28vh;
             position: absolute;
             text-align: center;
+            @media  #{$Mobile-max} {
+                display: none;
+                }
+                @media #{$Tablet} {
+                display: none;
+                }
+                @media #{$Mobile} {
+                display: none;
+                }
+
 
             .offer_circle-img1 {
                 width: 4vw;
                 height: 8vh;
                 padding-left: 7%;
                 padding-top: 13%;
+                @media  #{$Mobile-max} {
+                display: none;
+                }
+                @media #{$Tablet} {
+                display: none;
+                }
+                @media #{$Mobile} {
+                display: none;
+                }
             }
 
             .offer_circle-img2 {
                 width: 5vw;
                 height: 9vh;
-                padding-left: 7%;
+                padding-left: 6%;
                 padding-top: 13%;
+                @media  #{$Mobile-max} {
+                    display: none;
+                    }
+                    @media #{$Tablet} {
+                    display: none;
+                    }
+                    @media #{$Mobile} {
+                    display: none;
+                    }
             }
 
             .offer_circle-img3 {
                 width: 4vw;
                 height: 8vh;
-                padding-left: 7%;
+                padding-left: 5%;
                 padding-top: 13%;
+                @media  #{$Mobile-max} {
+                display: none;
+                }
+                @media #{$Tablet} {
+                display: none;
+                }
+                @media #{$Mobile} {
+                display: none;
+                }
             }
 
             .offer_circle-text {
@@ -138,7 +338,7 @@ color: #FFFFFF;
             }
 
             .offer_circle-text4 {
-                padding-top: 10%;
+                padding-top: 9%;
                 padding-left: 10%;
                 padding-right: 10%;
                 font-size: 1rem;
@@ -146,18 +346,18 @@ color: #FFFFFF;
         }
 
         .offer_circle:nth-child(1) {
-            top: 156vh;
-            left: 22vw;
+            top: 160vh;
+            left: 25vw;
         }
 
         .offer_circle:nth-child(2) {
-            left: 38vw;
-            top: 156vh;
+            left: 41vw;
+            top: 160vh;
         }
 
         .offer_circle:nth-child(3) {
-            left: 54vw;
-            top: 156vh;
+            left: 57vw;
+            top: 160vh;
         }
     }
 
@@ -166,7 +366,11 @@ color: #FFFFFF;
         height: 10vh;
         position: absolute;
         left: 47vw;
-        padding-top: 40vh;
+        padding-top: 25vh;
+
+        .offer__button {
+            background: none;
+        }
     }
 }
 .expectation {
@@ -174,6 +378,14 @@ color: #FFFFFF;
     color: #FFFFFF;
     display: flex;
     text-align: left;
+    @media  #{$Mobile-max} {
+        height: 300vh;
+        display: inline;
+    }
+    @media #{$Mobile} {
+        height: 300vh;
+        display: inline;
+    }
 
     .expectation__text-wrapper {
         padding-left: 10%;
@@ -210,6 +422,12 @@ color: #FFFFFF;
                 margin: 0;
                 list-style-type: none;
                 padding-left: 1.5vw;
+                @media  #{$Mobile-max} {
+                    width: 80vw;
+                }
+                @media #{$Mobile} {
+                    width: 80vw;
+                }
             }
 
             .expectation__ul li {
@@ -224,6 +442,14 @@ color: #FFFFFF;
             line-height: 22.4px;
             text-transform: uppercase;
             width: 40vw;
+            @media  #{$Mobile-max} {
+                padding-left: 20vw;
+                width: 90%;
+            }
+            @media #{$Mobile} {
+                padding-left: 20vw;
+                width: 90%;
+            }
         }
     }
 
@@ -231,26 +457,59 @@ color: #FFFFFF;
         display: inline;
         padding-top: 10vh;
         padding-left: 10vw;
+        @media  #{$Mobile-max} {
+            padding-left: 20vw;
+        }
+        @media #{$Mobile} {
+            padding-left: 20vw;
+        }
 
         .expectation__card-line {
             position: absolute;
             left: 64vw;
+            @media  #{$Mobile-max} {
+                display: none;
+            }
+            @media #{$Mobile} {
+                display: none;
+            }
         }
 
         .expectation__card-img {
             border-radius: 20px;
+            @media  #{$Mobile-max} {
+                width: 60%;
+            }
+            @media #{$Tablet} {
+                width: 80%;
+            }
+            @media #{$Mobile} {
+                width: 60%;
+            }
         }
 
         .expectation__card-littletext {
             font-size: 0.8rem;
             line-height: 1rem;
             padding-top: 5%;
+            @media  #{$Mobile-max} {
+                padding-left: 20vw;
+            }
+            @media #{$Mobile} {
+                padding-left: 20vw;
+            }
         }
 
         .expectation__card-name {
             font-size: 1.5rem;
             line-height: 2rem;
             padding-top: 5%;
+            @media  #{$Mobile-max} {
+                padding-left: 20vw;
+            }
+            @media #{$Mobile} {
+                padding-left: 20vw;
+            }
         }
 
         .expectation__card-text {
@@ -258,6 +517,14 @@ color: #FFFFFF;
             font-size: 1rem;
             width: 30vw;
             padding-top: 3%;
+            @media  #{$Mobile-max} {
+                padding-left: 20vw;
+                width: 90%;
+            }
+            @media #{$Mobile} {
+                padding-left: 20vw;
+                width: 90%;
+            }
         }
     }
 }
@@ -296,6 +563,17 @@ color: #FFFFFF;
             font-size: 10rem;
             line-height: 16rem;
             font-weight: 800;
+            @media  #{$Mobile-max} {
+                font-size: 4rem;
+                line-height: 4rem;
+            }
+            @media #{$Tablet} {
+                font-size: 6rem;
+            }
+            @media #{$Mobile} {
+                font-size: 4rem;
+                line-height: 4rem;
+            }
         }
 
         .plan-of-day__text {
@@ -321,6 +599,14 @@ color: #FFFFFF;
             left: 50vw;
             bottom: 10vh;
             background-color: rgb(43, 52, 61, 0.7);
+            @media  #{$Mobile-max} {
+                width: 80vw;
+                left: 10vw;
+            }
+            @media #{$Mobile} {
+                width: 80vw;
+                left: 10vw;
+            }
 
             .plan-of-day__inter {
                 width: 80%;
@@ -351,6 +637,17 @@ color: #FFFFFF;
                     padding-left: 3vw;
                     padding-right: 3vw;
                     font-weight: 200;
+                    @media  #{$Mobile-max} {
+                    font-size: 0.9rem;
+                    line-height: 1rem;
+                    }
+                    @media #{$Tablet} {
+                    font-size: 0.8rem;
+                    }
+                    @media #{$Mobile} {
+                        font-size: 0.9rem;
+                        line-height: 1rem;
+                    }
                 }
 
                 .plan-of-day__square-list {
@@ -366,6 +663,15 @@ color: #FFFFFF;
                     border-radius: 50%;
                     background-color: #FFBD4E;
                     margin-left: 30vw;
+                    @media  #{$Mobile-max} {
+                        display: none;
+                    }
+                    @media #{$Tablet} {
+                    display: none;
+                    }
+                    @media #{$Mobile} {
+                        display: none;
+                    }
 
                     .plan-of-day__square-circle-text {
                         padding-left: 2.5vw;
@@ -401,6 +707,14 @@ color: #FFFFFF;
             left: 50vw;
             bottom: 10vh;
             background-color: rgb(43, 52, 61, 0.7);
+            @media  #{$Mobile-max} {
+                width: 80vw;
+                left: 10vw;
+            }
+            @media #{$Mobile} {
+                width: 80vw;
+                left: 10vw;
+            }
 
             .plan-of-day2__inter {
                 width: 80%;
@@ -431,6 +745,17 @@ color: #FFFFFF;
                     padding-left: 3vw;
                     padding-right: 3vw;
                     font-weight: 200;
+                    @media  #{$Mobile-max} {
+                        font-size: 0.9rem;
+                        line-height: 1rem;
+                        }
+                        @media #{$Tablet} {
+                        font-size: 0.8rem;
+                        }
+                        @media #{$Mobile} {
+                            font-size: 0.9rem;
+                            line-height: 1rem;
+                        }
                 }
 
                 .plan-of-day2__square-list {
@@ -446,6 +771,15 @@ color: #FFFFFF;
                     border-radius: 50%;
                     background-color: #FFBD4E;
                     margin-left: 30vw;
+                    @media  #{$Mobile-max} {
+                        display: none;
+                    }
+                    @media #{$Tablet} {
+                    display: none;
+                    }
+                    @media #{$Mobile} {
+                        display: none;
+                    }
 
                     .plan-of-day2__square-circle-text {
                         padding-left: 2.5vw;
@@ -480,6 +814,14 @@ color: #FFFFFF;
             left: 50vw;
             bottom: 10vh;
             background-color: rgb(43, 52, 61, 0.7);
+            @media  #{$Mobile-max} {
+                width: 80vw;
+                left: 10vw;
+            }
+            @media #{$Mobile} {
+                width: 80vw;
+                left: 10vw;
+            }
 
             .plan-of-day3__inter {
                 width: 80%;
@@ -510,6 +852,17 @@ color: #FFFFFF;
                     padding-left: 3vw;
                     padding-right: 3vw;
                     font-weight: 200;
+                    @media  #{$Mobile-max} {
+                        font-size: 0.9rem;
+                        line-height: 1rem;
+                        }
+                        @media #{$Tablet} {
+                        font-size: 0.8rem;
+                        }
+                        @media #{$Mobile} {
+                            font-size: 0.9rem;
+                            line-height: 1rem;
+                        }
                 }
 
                 .plan-of-day3__square-list {
@@ -525,6 +878,15 @@ color: #FFFFFF;
                     border-radius: 50%;
                     background-color: #FFBD4E;
                     margin-left: 30vw;
+                    @media  #{$Mobile-max} {
+                        display: none;
+                    }
+                    @media #{$Tablet} {
+                    display: none;
+                    }
+                    @media #{$Mobile} {
+                        display: none;
+                    }
 
                     .plan-of-day3__square-circle-text {
                         padding-left: 2.5vw;
