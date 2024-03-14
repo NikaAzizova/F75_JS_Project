@@ -1,8 +1,17 @@
 @import './template.scss';
+body {
+    background-color: $Background;
+    font-size: 1vw;
+}
 
 ////часть с header
+
 .header {
-    background: linear-gradient(rgb(41, 52, 62), rgba(41, 52, 62, 0.72), rgb(41, 52, 62));
+    background: transparent;
+        position: absolute;
+        z-index: 99;
+        top: 0;
+        width: 100%;
 
     .header-wrapper {
         display: flex;
@@ -105,10 +114,7 @@
 
 }
 
-
-
 //главная страница
-
 
 h1 {
     font-family: 'FiraSans';
@@ -145,10 +151,7 @@ button {
     text-transform: uppercase;
 }
 
-.kamch {
-    background-color: $Background;
-    font-size: 1vw;
-}
+
 
 .page1 {
     display: grid;
