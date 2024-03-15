@@ -125,6 +125,7 @@ z-index: 0;
 background-color: rgb(43, 52, 61);
 font-family: $FontTitle;
 color: #FFFFFF;
+overflow: hidden; 
 
     .screensaver {
     background-image: url(/assets/images/tour-pages/screensaver.png);
@@ -554,6 +555,7 @@ color: #FFFFFF;
 
 .plan-of-day {
     height: 100vh;
+    width: 100vw;
     .plan-of-day__text-wrapper {
         height: 40vh;
         padding-left: 5vw;
@@ -586,10 +588,12 @@ color: #FFFFFF;
     .plan-of-day__block {
         height: 100vh;
         position: relative;
+        display: block;
         .plan-of-day__images {
             padding-top: 10vh;
-            width: 100%;
+            max-width: 100%;
             height: 20vh;
+            display: block;
         }
 
         .plan-of-day__square {
