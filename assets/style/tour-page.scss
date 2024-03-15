@@ -119,12 +119,19 @@
 
 }
 
+#weather {
+    padding-top: 2vh;
+    padding-left: 83vw;
+    font-size: 2rem;
+}
+
 .main {
 position: relative;
 z-index: 0;
 background-color: rgb(43, 52, 61);
 font-family: $FontTitle;
 color: #FFFFFF;
+//запрещает элементам вылезать за блок
 overflow: hidden; 
 
     .screensaver {
@@ -133,10 +140,17 @@ overflow: hidden;
     background-size: cover;
     height: 100vh;
 
+    .screensaver__weather {
+        padding-top: 20vh;
+        padding-left: 73vw;
+        font-size: 1.5rem;
+        color: #FFBD4E;
+    }
+
     .screensaver__text-wrapper {
         align-items: flex-start;
         padding-left: 16vw;
-        padding-top: 50vh;
+        padding-top: 20vh;
 
         .screensaver__header {
             color: white;

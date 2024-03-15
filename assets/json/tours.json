@@ -7,7 +7,8 @@
     "dates":"4 - 20 января 2024 года ",
     "price":" 1490 $",
     "gid":"Частный гид-экскурсовод с государственной аккредитацией. Ким Лу",
-    "img":"https://www.hse.ru/data/2023/09/20/2061111444/1iStock-497572532.jpg"
+    "img":"https://www.hse.ru/data/2023/09/20/2061111444/1iStock-497572532.jpg",
+    "city":"Pekin"
 },
 {
     "id":"222",
@@ -18,7 +19,8 @@
     "dates":"4  - 18 февраля 2024 года",
     "price":" 2990 £",
     "gid":"Профессиональный гид в Швейцарии. Михаил Крюков",
-    "img":"https://znaki.fm/static/content/thumbs/388x218/6/91/scnvor---c1034x582x50px50p--fa13e00d29397c29de7b89ed3d57a916.webp"
+    "img":"https://znaki.fm/static/content/thumbs/388x218/6/91/scnvor---c1034x582x50px50p--fa13e00d29397c29de7b89ed3d57a916.webp",
+    "city":"Zurich"
 },{
     "id":"333",
     "month":"МАРТ",
@@ -28,7 +30,8 @@
     "dates":" 6  - 13 марта 2024 года",
     "price":"1690 $",
     "gid":" Лицензировнный рускоговорящий гид. Иссам",
-    "img":"https://blog.ostrovok.ru/wp-content/uploads/2022/09/7-3.jpg"
+    "img":"https://blog.ostrovok.ru/wp-content/uploads/2022/09/7-3.jpg",
+    "city":"Marrakesh"
 },{
     "id":"444",
     "month":"АПРЕЛЬ",
@@ -38,7 +41,8 @@
     "dates":" 14 - 28 апреля 2024 года",
     "price":"1500 £",
     "gid":"Профессиональный гид и переводчик. Виктор Бердник",
-    "img":"https://londongroup.ru/upload/medialibrary/a72/1.jpg"
+    "img":"https://londongroup.ru/upload/medialibrary/a72/1.jpg",
+    "city":"Paris"
 },{
     "id":"555",
     "month":"МАЙ",
@@ -48,7 +52,8 @@
     "dates":"3 - 5 мая 2024 года",
     "price":" 50 000 ₽",
     "gid":"Профессиональный гид и переводчик. Алексей Николаев",
-    "img":"https://cdn.tripster.ru/thumbs2/39d13960-aba2-11ed-a158-068ddae10ff3.800x600.jpeg"
+    "img":"https://cdn.tripster.ru/thumbs2/39d13960-aba2-11ed-a158-068ddae10ff3.800x600.jpeg",
+    "city":"Teriberka"
 },{
     "id":"666",
     "month":"ИЮНЬ",
@@ -58,7 +63,8 @@
     "dates":"1  - 15 июня 2024 года",
     "price":" 1500 £",
     "gid":"Профессиональный переводчик и гид. Татьяна Николаева",
-    "img":"https://7daytravel.ru/wp-content/uploads/2018/11/view-of-colosseum-in-rome-and-morning-sun-italy-europe.jpg"
+    "img":"https://7daytravel.ru/wp-content/uploads/2018/11/view-of-colosseum-in-rome-and-morning-sun-italy-europe.jpg",
+    "city":"Milan"
 },{
     "id":"777",
     "month":"ИЮЛЬ",
@@ -68,7 +74,8 @@
     "dates":"6  - 20 июля 2024 года",
     "price":"80 000 ₽",
     "gid":"Тревел-эксперт Магомедарип ",
-    "img":"https://cdn.forbes.ru/forbes-static/new/2022/02/Irganajskoe-vodohranilise-620bbc3d00dd9.jpg"
+    "img":"https://cdn.forbes.ru/forbes-static/new/2022/02/Irganajskoe-vodohranilise-620bbc3d00dd9.jpg",
+    "city":"Derbent"
 },{
     "id":"888",
     "month":"АВГУСТ",
@@ -78,7 +85,8 @@
     "waiting":["Главные впечатления путешествия: ","Прокатимся на снегоходе по бескрайним снежным пустыням","Покатаемся на собачьих упряжках","Расслабимся в термальных водах под звездным камчатским небом","Прочувствуем мощь бушующего океана и невероятную красоту величественных вулканов"],
     "price":" 83 000 ₽",
     "gid":"Тревел-эксперт Ольга Васина ",
-    "img":"https://cdnn21.img.ria.ru/images/07e7/09/08/1895005510_0:0:3639:2047_600x0_80_0_0_37193e50a70d307c98a068cc451bed71.jpg"
+    "img":"https://cdnn21.img.ria.ru/images/07e7/09/08/1895005510_0:0:3639:2047_600x0_80_0_0_37193e50a70d307c98a068cc451bed71.jpg",
+    "city":"Petropavlovsk-Kamchatsky"
 },{
     "id":"999",
     "month":"СЕНТЯБРЬ",
@@ -88,7 +96,8 @@
     "dates":"11 - 19 сентября 2024 года",
     "price":"1300 £",
     "gid":"Тревел-эксперт Дмитрий Круглов",
-    "img":"https://deluxe.voyage/useruploads/articles/article_3e77b92c1c.jpg"
+    "img":"https://deluxe.voyage/useruploads/articles/article_3e77b92c1c.jpg",
+    "city":"Male"
 },{
     "id":"112",
     "month":"СЕНТЯБРЬ",
@@ -98,7 +107,8 @@
     "dates":"11 - 17 сентября 2024 года ",
     "price":" 2490 $",
     "gid":" Тревел-эксперт Татьяна Косых",
-    "img":"https://cdn.culture.ru/images/79fdea78-38f7-5c10-8d29-107e01387bb4"
+    "img":"https://cdn.culture.ru/images/79fdea78-38f7-5c10-8d29-107e01387bb4",
+    "city":"Yuzhno-Sakhalinsk"
 },{
     "id":"1000",
     "month":"ОКТЯБРЬ",
@@ -108,7 +118,8 @@
     "dates":"6  – 20 октября 2024 года",
     "price":" 2690 £",
     "gid":"Научный руководитель путешествия морский биолог. Владимир Вертянкин",
-    "img":"https://kuluarpohod.com/wp-content/uploads/2021/04/shapka-1.jpg"
+    "img":"https://kuluarpohod.com/wp-content/uploads/2021/04/shapka-1.jpg",
+    "city":"islamabad"
 },{
     "id":"1001",
     "month":"НОЯБРЬ",
@@ -118,7 +129,8 @@
     "dates":"11  - 19 сентября 2024 года",
     "price":" 1200 $",
     "gid":"коренной балиец Ньоман Арнава",
-    "img":"https://media.kf.expert/cms/skolko-stoit-zhizn-na-bali-1.jpg"
+    "img":"https://media.kf.expert/cms/skolko-stoit-zhizn-na-bali-1.jpg",
+    "city":"Ubud"
 },{
     "id":"1002",
     "month":"ДЕКАБРЬ",
@@ -128,5 +140,6 @@
     "dates":" 4  - 18 декабря 2024 года",
     "price":"150 000 ₽",
     "gid":" тревел-эксперт Александр ",
-    "img":"https://cdn2.tu-tu.ru/image/pagetree_node_data/1/32620bb65f7e7443b5bd325aacde70fb/"
+    "img":"https://cdn2.tu-tu.ru/image/pagetree_node_data/1/32620bb65f7e7443b5bd325aacde70fb/",
+    "city":"Kathmandu"
 }]
