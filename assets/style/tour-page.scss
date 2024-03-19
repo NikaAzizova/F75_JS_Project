@@ -133,10 +133,18 @@ overflow: hidden;
     background-size: cover;
     height: 100vh;
 
+    .screensaver__weather {
+        color: #FFFFFF;
+        font-size: 1.3rem;
+        padding-left: 80vw;
+        padding-top: 20vh;
+        text-align: center;
+    }
+
     .screensaver__text-wrapper {
         align-items: flex-start;
         padding-left: 16vw;
-        padding-top: 50vh;
+        padding-top: 20vh;
 
         .screensaver__header {
             color: white;
