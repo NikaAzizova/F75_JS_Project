@@ -6,4 +6,8 @@
 //Пример импорта функций import{one, two} from './function.js'
 // Важно! Не смешиваем переменные и функции. Функции с функциями, переменные с переменными
 
-import './src'
+import './src';
+import './src/index/createcardtours';
+import './src/index/date';
+import './src/index/createinfocompany'
+import './src/index/createTravekIdeas'

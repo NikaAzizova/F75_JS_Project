@@ -82,9 +82,6 @@ confirmForm.addEventListener('submit', function (evevnt) {
     }
 })
 
-
-
-
 btnNext.addEventListener('click', () => {
     if (currentIndexMonth >= 11) {
         currentIndexMonth = 0;

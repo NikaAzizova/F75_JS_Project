@@ -1,6 +1,4 @@
 //Главная страница
-
-
 import {
     nameInput,
     emailInput,
@@ -71,22 +69,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
             //очищаем форму
             form.reset();
-
         }
-
-
-
-
     }
-
 
     //функция теста email
     function validateEmail(input) {
         let regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
         return regexEmail.test(input);
-
-
-
     }
 
     //функция проверки на мобильный номер
@@ -95,17 +84,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         return regexTel.test(phone);
     }
-
-
-
-
 })
 
 //бургер меню
-
 import {makeBurgerMenuVisible, makeBurgerDisapear} from './functions';
 import{burgetIcon,burgerCross} from './vars';
-
 burgetIcon.addEventListener('click', makeBurgerMenuVisible);
-
 burgerCross.addEventListener('click' ,makeBurgerDisapear);
+
