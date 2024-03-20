@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch('assets/json/tours.json')
         .then(response => response.json())
         .then(data => {
-            const toursId = localStorage.getItem('toursId'); // Получаем toursId из localStorage
+            const toursId = localStorage.getItem('currentIndex'); // Получаем currentIndex из localStorage
             const tourObject = data.find(item => item.id === toursId); 
 
             if (tourObject) {
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // Получаем значение ключа toursid из localstorage
-const toursid = localStorage.getItem('toursid');
+const toursid = localStorage.getItem('currentIndex');
 
 // Загружаем файл tours.json
 fetch('assets/json/tours.json')

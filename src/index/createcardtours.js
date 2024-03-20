@@ -16,10 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
             btn.addEventListener('click', (e) => {
             let id = e.target.id;
             console.log(id);
-            localStorage.setItem('toursId', JSON.stringify(id));
+            localStorage.setItem('currentIndex', id);
+            window.location.href = "/tour-page.html";
+      });
       });
       })
-        })
     } catch(error) {
         console.log(error);
     }
