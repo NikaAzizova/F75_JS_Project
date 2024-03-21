@@ -19,8 +19,7 @@
         </div>
         <!--the list of links-->
         <div class="block-header__lists list">
-            <nav class="block-header__nav nav">
-                <a class="link" href="/tour-page.html">СТРАНИЦА ТУРА</a>
+            <nav class="block-header__nav nav index-nav">
                 <a class="link" href="./calendar.html">КАЛЕНДАРЬ</a>
                 <a class="link" href="#">КОНТАКТЫ</a>
             </nav>
@@ -33,8 +32,6 @@
               <div class="burger-menu__cross menu-cross" id="cross"><span class="cross">X</span></div>
 
               <a class="burger-menu__link menu-link" href="#">ГЛАВНАЯ СТРАНИЦА</a>
-              <span class="burger-menu__line line"></span>
-              <a class="burger-menu__link menu-link " href="/tour-page.html">СТРАНИЦА ТУРА</a>
               <span class="burger-menu__line line"></span>
               <a class="burger-menu__link menu-link" href="./calendar.html">КАЛЕНДАРЬ</a>
               <span class="burger-menu__line line"></span>
@@ -221,7 +218,24 @@
       <p class="footer-text">Политика обработки персональных данных</p>
   </div>
 </footer>
-
+<div id="modal" class="modal">
+  <form name="confirmForm" class="modal__content" novalidate>
+      <span class="modal__close">&#215;</span>
+      <h2 class="modal__title">Вы выбрали тур: <span id="modal__title-name" class="modal__title-name"></span></h2>
+      <p class="modal__subtitle">Даты поездки: <span id="modal__title-datas" class="modal__title-datas"></span></p>
+      <div class="count__peopls-box">
+      <label class="count__people" for="count__people">Выберите количество человек: </label>
+      <input name="number" type="number" min="1" max="5" id="count__people" class="count__people-input"   placeholder="1" required/>
+  </div>
+      <div class="modal__inputs">
+          <input id="name" name="name" type="text" class="input" placeholder="Введите ваше имя и фамилию" required />
+          <input id="tel" name="tel" type="tel" class="input" placeholder="Введите ваш номер телефона" required/>
+          <input id="email" name="email" type="email" class="input" placeholder="Введите ваш email" required/>
+      </div>
+      <p class="modal__price">Общая сумма тура составляет : <span id="modal__price-sum" class="modal__price-sum"></span></p>
+      <button type="submit" id="confirmBtn" class="confirm__btn">Забронировать</button>
+  </form>
+</div>
   <script type="module" src="/main.js"></script>
 </body>
 

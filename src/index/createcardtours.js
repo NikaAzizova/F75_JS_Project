@@ -1,3 +1,5 @@
+const modal = document.getElementById("modal");
+//блок туров
 document.addEventListener('DOMContentLoaded', function() {
     const thisDate = new Date();
     const thisMonth = thisDate.getMonth()+1;
@@ -11,6 +13,13 @@ document.addEventListener('DOMContentLoaded', function() {
                         console.log(item.id);
                     }
             });
+            let btnsReserve = document.querySelectorAll('.info__buttonsreserve');
+            btnsReserve.forEach(btn => {
+              btn.addEventListener('click', (e) => {
+                modal.style.display = 'block';
+              })
+        })
+
             let btns = document.querySelectorAll('.info__buttonsmoreinfo');
             btns.forEach(btn => {
             btn.addEventListener('click', (e) => {
@@ -26,8 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
 })
-
-
+  
 function createCart(object) {
     const container = document.querySelector('.card');
     const {city, monthnumb, title, text, price, current, body_img, start_day, end_day, id} = object;
@@ -68,6 +76,7 @@ function createCart(object) {
     container.appendChild(div);
 }
 
-
-
-
+const btnClose = document.querySelector(".modal__close");
+btnClose.addEventListener('click', () => {
+    modal.style.display = 'none';
+});

@@ -29,8 +29,10 @@ body {
 
         .nav {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            justify-content: right;
+            gap: 20rem;
+            
+            
 
             @media #{$Tablet} {
                 display: none;
@@ -71,7 +73,6 @@ body {
                 position: absolute;
                 z-index: 1;
                 right: 2px;
-
                 width: 200px;
                 background-color: $Yellow;
 
@@ -111,8 +112,8 @@ body {
         }
 
     }
-
 }
+
 
 //главная страница
 
@@ -191,7 +192,7 @@ button {
         display: flex;
         flex-direction: column;
         align-items: end;
-        padding: 26rem 12rem 0 0;
+        padding: 12rem 4.32rem 0 0;
     }
 }
 
@@ -307,30 +308,29 @@ button {
 
     &__name {
         position: relative;
-        top: 2rem;
-        right: 30rem;
+        top: 9rem;
+        right: 20rem;
         font-family: 'Montserrat';
         font-size: 2.25rem;
         font-weight: 800;
         color: rgba(255, 255, 255, 0.7);
-        ;
         transform: rotate(-90deg);
         letter-spacing: 1.5rem;
     }
 }
 
 .container__img > img {
-    width: 65rem;
+    width: 48vw;
     height: 35rem;
 }
 
 .info {
     position: relative;
     z-index: 1;
-    left: -3rem;
+    left: -2rem;
     top: 3.25rem;
     background-image: linear-gradient(360deg, rgb(16, 19, 21) 0%, rgba(41, 52, 62, 0.55) 100%);
-    width: 50rem;
+    width: 50vw;
     height: fit-content;
     padding: 2rem 1.8125rem 2rem 1.9375rem;
 
@@ -361,7 +361,6 @@ button {
 
     &__textpadding {
         padding-top: 0.9375rem;
-        width: 40rem;
     }
 
     &__specific {
@@ -759,3 +758,111 @@ button {
         text-decoration: underline;
     }
 }
+
+.modal {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+
+        .modal__content {
+            background-color: $Background;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 30px 30px 30px;
+            width: 40%;
+            margin: 5% auto;
+            border: 1px solid $Background;
+            border-radius: 20px;
+            color: rgba(255, 252, 249, 0.786);
+            font-family: $FontTitle;
+            gap: 15px;
+
+            @media  #{$Tablet-min} {
+                width: 70%;
+            }
+
+            .modal__close {
+                text-align: right;
+                color: $Gray;
+                font-size: 2.2rem;
+                cursor: pointer;
+            }
+
+            .modal__close:hover {
+                color: white;
+            }
+
+            .count__people-input {
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid $Yellow;
+                text-align: center;
+                padding-left: 15px;
+                padding-bottom: 5px;
+                margin-left: 2%;
+                color: white;
+                font-family: $FontText;
+                font-size: 1rem;
+            }
+
+            .message-error {
+                color: red;
+            }
+
+            .modal__inputs {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .input {
+                    height: 50px;
+                    border-radius: 20px;
+                    background-color: rgba(210, 210, 210, 0.3);
+                    border: none;
+                    color: white;
+                    font-family: $FontText;
+                    padding-left: 30px;
+                    font-size: 1rem;
+                }
+
+                .message-error {
+                    color: red;
+                }
+
+                .input::placeholder {
+                    color: rgba(255, 255, 255, 0.31);
+                    font-family: $FontText;
+                    font-size: 1rem;
+                }
+            }
+
+            .modal__price {
+                margin: 3% 0%;
+            }
+
+            .confirm__btn {
+                cursor: pointer;
+                margin-left: 25%;
+                width: 50%;
+                height: 35px;
+                margin-top: 5%;
+                background-color: $Yellow;
+                border: none;
+                border-radius: 10px;
+                font-family: $FontTitle;
+                font-size: 1rem;
+                font-weight: bolder;
+            }
+
+            .confirm__btn:hover {
+                transform: scale(1.1);
+                transition: 0.5s ease-in-out;
+            }
+        }
+    }
