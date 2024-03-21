@@ -15,18 +15,18 @@ function makeCLick() {
 document.addEventListener('DOMContentLoaded', function() {
     const apiKey = '85f30b8095b94031bbf193620241503';
     let city = ''; // Название города из файла tours.json
-    const url = 'http://api.weatherapi.com/v1/current.json?key=' + apiKey + '&q=' + city;
     const weatherElement = document.getElementById('weather');
 
     fetch('assets/json/tours.json')
         .then(response => response.json())
         .then(data => {
-            const toursId = localStorage.getItem('currentIndex'); // Получаем currentIndex из localStorage
-            const tourObject = data.find(item => item.id === toursId); 
+            const toursid = localStorage.getItem('currentIndex'); // Получаем currentIndex из localStorage
+            const tourObject = data.find(item => item.id === toursid); 
 
             if (tourObject) {
                 city = tourObject.weather; 
-                getWeather(); 
+                const url = 'http://api.weatherapi.com/v1/current.json?key=' + apiKey + '&q=' + city;
+                getWeather(url); // Вызываем функцию для получения погоды с обновленным URL
             } else {
                 console.error('Не удалось найти объект с toursId в файле tours.json');
             }
@@ -36,12 +36,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
     // Функция для получения погоды
-    function getWeather() {
+    function getWeather(url) {
         fetch(url)
             .then(response => response.json())
             .then(data => {
                 const temperature = data.current.temp_c;
-
                 // Вывод данных о погоде
                 weatherElement.textContent = temperature + '°C';
             })
@@ -67,13 +66,24 @@ fetch('assets/json/tours.json')
     const headerElement = document.querySelector('.screensaver__header');
     const textElement = document.querySelector('.screensaver__text');
     const textTwoElement = document.querySelector('.offer__text-main');
-    const expElement = document.querySelector('.expectation__text');
+    const expElement = document.querySelector('.expectation__ul');
     const littleElement = document.querySelector('.expectation__card-littletext');
-    
+    const textlittle = document.querySelector('.offer__text-little');
+    const dateElement = document.querySelector('.offer_circle-text2');
+    const priceElement = document.querySelector('.offer_circle-text3');
+    const gidElement = document.querySelector('.offer_circle-text4');
+    const expectationElement = document.querySelector('.expectation__text');
+    const endElement = document.querySelector('.expectation__end-text');
+    const cardName = document.querySelector('.expectation__card-name');
+    const cardText = document.querySelector('.expectation__card-text');
 
       // Обновляем содержимое div элементов
     if (headerElement) {
         headerElement.textContent = tour.city;
+    }
+
+    if (cardText) {
+        cardText.textContent = tour.gid_info;
     }
 
     if (textElement) {
@@ -91,7 +101,35 @@ fetch('assets/json/tours.json')
         littleElement.textContent = tour.gid;
     }
 
-    const imgElement = document.querySelector('.screensaver__img');
+    if(textlittle) {
+        textlittle.textContent = tour.tittlelittle;
+    }
+
+    if(dateElement) {
+        dateElement.textContent = tour.dates;
+    }
+
+    if(priceElement) {
+        priceElement.textContent = tour.priceall;
+    }
+
+    if(gidElement) {
+        gidElement.textContent = tour.gid;
+    }
+
+    if(expectationElement) {
+        expectationElement.textContent = tour.expectation;
+    }
+
+    if(endElement) {
+        endElement.textContent = tour.end;
+    }
+
+    if(cardName) {
+        cardName.textContent = tour.gid_name;
+    }
+
+    const imgElement = document.querySelector('.expectation__card-img');
     if (imgElement) {
         imgElement.src = tour.gid_img;
     }

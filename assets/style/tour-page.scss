@@ -136,7 +136,7 @@ overflow: hidden;
     .screensaver__weather {
         color: #FFFFFF;
         font-size: 1.3rem;
-        padding-left: 80vw;
+        padding-left: 75vw;
         padding-top: 20vh;
         text-align: center;
     }
@@ -338,12 +338,12 @@ overflow: hidden;
             .offer_circle-text2 {
                 font-size: 1.5rem;
                 padding-top: 10%;
-                padding-left: 14%;
+                padding-left: 11%;
             }
 
             .offer_circle-text3 {
                 padding-top: 10%;
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
 
             .offer_circle-text4 {
@@ -403,6 +403,7 @@ overflow: hidden;
         .expectation__header {
             font-family: "Mark", sans-serif;
             font-size: 4rem;
+            color: #FFBD4E;
         }
 
         .expectation__text {
@@ -486,6 +487,7 @@ overflow: hidden;
 
         .expectation__card-img {
             border-radius: 20px;
+            width: 15vw;
             @media  #{$Mobile-max} {
                 width: 60%;
             }
@@ -513,6 +515,7 @@ overflow: hidden;
             font-size: 1.5rem;
             line-height: 2rem;
             padding-top: 5%;
+            color: #FFBD4E;
             @media  #{$Mobile-max} {
                 padding-left: 20vw;
             }
