@@ -190,17 +190,20 @@
     "end": "Это путешествие воплотит все ваши давние мечты о настоящей зимней сказке!"
 },
 {
-    "id":"333",
+    "id":"6",
     "monthnumb":"3",
     "month":"МАРТ",
-    "dates": "3 марта",
+    "dates": "6-13 марта",
+    "start_day": "6",
+    "end_day": "13",
     "city": "Марокко",
     "title": " Настоящие восточные сказки", 
     "tittlelittle": "Встреча с реальной восточной сказкой, обязательно будет ожидать каждого путешественника, который соберется посетить Марокко ",
     "text":"Арабская и берберская культура, ночь в пустыне Сахара под звездным небом, самая разнообразная и вкусная кухня",
     "waiting":["Насладимся океаном","Поживем в настоящей пустыне Сахаре в кемпингах со всеми удобствами","Побываем в настоящих древних мастерских в Имперском городе","Посетим Голубой город","Побываем в настоящих древних мастерских в Имперском городе"],
     "expectation": "Для того чтобы увидеть самые основные достопримечательности Марокко, необходимо посетить ее имперские города, такие как Рабат, Мекнес, Марракеш и Фес.",
-    "price":"1000 $",
+    "price":"1000",
+    "current": "$",
     "priceall": "1000 $",
     "end": "Это путешествие изменит вашу жизнь на до и после",
     "gid_img": "https://img.freepik.com/free-photo/smiley-man-relaxing-outdoors_23-2148739334.jpg?size=626&ext=jpg&ga=GA1.1.172546858.1686171386&semt=ais",
@@ -211,7 +214,7 @@
     "body_img":"https://blog.ostrovok.ru/wp-content/uploads/2022/09/7-3.jpg"
 },
 {
-    "id":"6",
+    "id":"7",
     "monthnumb":"3",
     "monthstr":"март",
     "start_day": "28",
@@ -253,7 +256,7 @@
     "end": "Окунитесь на несколько дней в мир древней Руси"
 },
  {
-    "id":"7",
+    "id":"8",
     "monthnumb":"4",
     "monthstr":"апрель",
     "start_day": "5",
@@ -292,7 +295,7 @@
     "https://www.russiadiscovery.ru/storage/resolutions/big/description_details/6131/img_652faba81337d.jpg"]
 },
  {
-    "id":"8",
+    "id":"9",
     "monthnumb":"4",
     "monthstr":"апрель",
     "start_day": "28",
@@ -325,7 +328,7 @@
     "https://www.russiadiscovery.ru/storage/resolutions/big/description_details/5534/img_64135a638f092.jpg"]
 },
  {
-    "id":"9",
+    "id":"10",
     "monthnumb":"5",
     "monthstr":"май",
     "start_day": "1",
@@ -362,7 +365,7 @@
     "https://www.russiadiscovery.ru/storage/resolutions/big/description_details/6341/img_65af7519cf63a.jpg"]
 },
  {
-    "id":"10",
+    "id":"11",
     "monthnumb":"5",
     "monthstr":"май",
     "start_day": "24",
@@ -395,7 +398,7 @@
     "https://www.russiadiscovery.ru/storage/resolutions/big/description_details/425/img_64ae7f82095ea.jpg"]
 },
  {
-    "id":"11",
+    "id":"12",
     "monthnumb":"6",
     "monthstr":"июнь",
     "start_day": "14",
@@ -435,7 +438,7 @@
     "https://www.russiadiscovery.ru/storage/resolutions/big/description_details/2159/img_647a02d1c796c.jpg"]
 },
  {
-    "id":"12",
+    "id":"13",
     "monthnumb":"6",
     "monthstr":"июнь",
     "start_day": "7",
@@ -471,7 +474,7 @@
     "https://www.russiadiscovery.ru/storage/resolutions/big/description_details/6568/img_65b8a0ed1bf08.jpg"]
 },
  {
-    "id":"13",
+    "id":"14",
     "monthnumb":"7",
     "monthstr":"июль",
     "start_day": "10",
@@ -506,7 +509,7 @@
     "https://www.russiadiscovery.ru/storage/resolutions/big/description_details/5003/img_63beb61a0c58b.jpg"]
 },
  {
-    "id":"14",
+    "id":"15",
     "monthnumb":"7",
     "monthstr":"июль",
     "start_day": "19",
@@ -543,7 +546,7 @@
     "https://www.russiadiscovery.ru/storage/resolutions/big/content_gallery_images/3717/img_63bea93d6e479.jpg"]
     },
     {
-    "id":"15",
+    "id":"16",
     "monthnumb":"8",
     "monthstr":"август",
     "start_day": "20",
@@ -580,7 +583,7 @@
     "https://www.russiadiscovery.ru/storage/resolutions/big/description_details/4985/img_63ca972d63ca2.jpg"]
 },
   {
-    "id":"16",
+    "id":"17",
     "monthnumb":"8",
     "monthstr":"август",
     "start_day": "1",
@@ -617,7 +620,7 @@
     "https://www.russiadiscovery.ru/storage/resolutions/big/description_details/4819/img_64bfceb4d7005.jpg"]
 },
  {
-    "id":"17",
+    "id":"18",
     "monthnumb":"9",
     "monthstr":"сентябрь",
     "start_day": "2",
@@ -652,7 +655,7 @@
     "https://www.russiadiscovery.ru/storage/resolutions/big/description_details/4992/img_63be889f798ec.jpg"]
     },
     {
-    "id":"18",
+    "id":"19",
     "monthnumb":"9",
     "monthstr":"сентябрь",
     "start_day": "5",
@@ -688,7 +691,7 @@
     "https://www.russiadiscovery.ru/storage/resolutions/big/description_details/1861/img_64955fe7a59bb.jpg"]
 },
  {
-    "id":"19",
+    "id":"20",
     "monthnumb":"10",
     "monthstr":"октябрь",
     "start_day": "17",
@@ -722,7 +725,7 @@
     "https://www.russiadiscovery.ru/storage/resolutions/big/content_gallery_images/23704/img_6585918adbf40.jpg"]
 },
   {
-    "id":"20",
+    "id":"21",
     "monthnumb":"10",
     "monthstr":"октябрь",
     "start_day": "3",
@@ -755,7 +758,7 @@
     "https://www.russiadiscovery.ru/storage/resolutions/big/content_gallery_images/6415/img_63e61f05d761a.jpg"]
 },
    {
-    "id":"21",
+    "id":"22",
     "monthnumb":"11",
     "monthstr":"ноябрь",
     "start_day": "1",
@@ -789,7 +792,7 @@
     "https://www.russiadiscovery.ru/storage/resolutions/big/content_gallery_images/26245/img_65bcd7ceedd71.jpg"]
 },
  {
-    "id":"22",
+    "id":"23",
     "monthnumb":"11",
     "monthstr":"ноябрь",
     "start_day": "7",
@@ -825,7 +828,7 @@
     "https://www.russiadiscovery.ru/storage/resolutions/big/description_details/1785/img_64b68c52600d4.jpg"]
 },
  {
-    "id":"23",
+    "id":"24",
     "monthnumb":"12",
     "monthstr":"декабрь",
     "start_day": "10",
@@ -861,7 +864,7 @@
     "https://www.russiadiscovery.ru/storage/resolutions/big/description_details/6551/img_65afd7ed485b9.jpg"]
 },
   {
-    "id":"24",
+    "id":"25",
     "monthnumb":"12",
     "monthstr":"декабрь",
     "start_day": "27",
@@ -896,7 +899,7 @@
     "https://www.russiadiscovery.ru/storage/resolutions/big/description_details/6068/img_64df2546b762f.jpg",
     "https://www.russiadiscovery.ru/storage/resolutions/big/description_details/5531/img_64df25442116a.jpg"]
 },{
-    "id":"111",
+    "id":"26",
     "monthnumb":"1",
     "monthstr":"ЯНВАРЬ",
     "start_day": "4",
@@ -930,14 +933,17 @@
 
 },
 {
-    "id":"222",
+    "id":"27",
     "monthnumb":"2",
     "month":"ФЕВРАЛЬ",
+    "start_day": "4",
+    "end_day": "18",
     "city":"Швейцария",
     "text":" Природа одарила швейцарские просторы потрясающими ландшафтами.",
     "waiting":[".","Прикоснемся к тысячелетнему леднику","Искупаемся в горном озере и почувствуем, как наше тело омолодится","Попробуем самый вкусный на свете сыр и молоко","Увидим вблизи Маттерхорн (вершину с известной шоколадки toblerone)","Мы увидим долину 70-ти водопадов, которая вдохновила Толкиена на создание Ривенделла (города эльфоф)","Прошагаем над бирюзовым озером, сопровождаемые снежными вершинами великих гор"],
     "dates":"4  - 18 февраля 2024 года",
-    "price":" 2990 £",
+    "price":"2990",
+    "current": "$",
     "gid":"Профессиональный гид в Швейцарии. Михаил Крюков",
     "body_img":"https://znaki.fm/static/content/thumbs/388x218/6/91/scnvor---c1034x582x50px50p--fa13e00d29397c29de7b89ed3d57a916.webp",
     "gid_img": "https://img.freepik.com/free-photo/smiley-man-relaxing-outdoors_23-2148739334.jpg?size=626&ext=jpg&ga=GA1.1.172546858.1686171386&semt=ais",
@@ -951,14 +957,16 @@
     "weather": "Berne"
 
 },{
-    "id":"444",
+    "id":"28",
     "monthnumb":"4",
     "month":"АПРЕЛЬ",
+    "start_day": "27",
+    "end_day": "31",
     "city":"Франция",
     "text":" В это время особенно хорошо гулять по паркам и садам Франции, например, в саду Тюильри.",
     "waiting":["Наша с вами программа на эту неделю","Пообедаем и выпьем шампанское у подножья Эйфелевой башни","Узнаем много нового о Франции, легендах Парижа и культуре","Сделаем красивые фотографии","Посетим старые церкви, замки, музеи","Послушаем живую музыку и орган","Посетим рыбный рынок, где вы попробуете самые известные нормандские морепродукты: устрицы, улитки, креветки","Попробуем основные классические французские блюда и десерты"],
     "dates":" 14 - 28 апреля 2024 года",
-    "price":"1500 £",
+    "price":"1500",
     "gid":"Профессиональный гид и переводчик. Виктор Бердник",
     "body_img":"https://londongroup.ru/upload/medialibrary/a72/1.jpg",
     "gid_img": "https://img.freepik.com/free-photo/smiley-man-relaxing-outdoors_23-2148739334.jpg?size=626&ext=jpg&ga=GA1.1.172546858.1686171386&semt=ais",
@@ -972,14 +980,16 @@
     "weather": "Paris"
 
 },{
-    "id":"555",
+    "id":"29",
     "monthnumb":"5",
+    "start_day": "27",
+    "end_day": "31",
     "month":"МАЙ",
     "city":"Кольский полуостров",
     "text":"Кольский... Кусочек земли за полярным кругом манит всё больше и больше искателей приключений.",
     "waiting":["Главные впечатления путешествия: ","Выйдем в открытое море на 3-7 часов на поиски китов","Будем пробовать местные морепродукты (гребешки, морские ежи, треску и пр.)","Посетим кладбище кораблей","Прогуляемся по заброшенной части старой Териберки","увидим водопад, впадающий в Баренцево море","Пройдемся по 'Драконьему' пляжу","Отправимся в треккинг по берегу моря и тундре"],
     "dates":"3 - 5 мая 2024 года",
-    "price":" 50 000 ₽",
+    "price":" 50000",
     "gid":"Профессиональный гид и переводчик. Алексей Николаев",
     "body_img":"https://cdn.tripster.ru/thumbs2/39d13960-aba2-11ed-a158-068ddae10ff3.800x600.jpeg",
     "gid_img": "https://img.freepik.com/free-photo/smiley-man-relaxing-outdoors_23-2148739334.jpg?size=626&ext=jpg&ga=GA1.1.172546858.1686171386&semt=ais",
@@ -993,7 +1003,7 @@
     "weather": "Murmansk"
 
 },{
-    "id":"666",
+    "id":"30",
     "monthnumb":"6",
     "month":"ИЮНЬ",
     "city":"Солнечная Италия",
@@ -1013,7 +1023,7 @@
     "end": "Ощути вживую всю могущественность природы",
     "weather": "Milan"
 },{
-    "id":"777",
+    "id":"31",
     "monthnumb":"7",
     "month":"ИЮЛЬ",
     "city":"Волшебный Дагестан",
@@ -1033,7 +1043,7 @@
     "end": "Ощути вживую всю могущественность природы",
     "weather": "Derbent"
 },{
-    "id":"888",
+    "id":"32",
     "monthnumb":"8",
     "month":"АВГУСТ",
     "city":"Снежная Камчатка",
@@ -1053,7 +1063,7 @@
     "end": "Ощути вживую всю могущественность природы",
     "weather": "Petropavlovsk-Kamchatsky"
 },{
-    "id":"999",
+    "id":"33",
     "monthnumb":"9",
     "month":"СЕНТЯБРЬ",
     "city":"Мальдивы",
@@ -1074,7 +1084,7 @@
     "weather": "Male"
 
 },{
-    "id":"112",
+    "id":"34",
     "monthnumb":"9",
     "month":"СЕНТЯБРЬ",
     "city":"Cахалин",
@@ -1094,7 +1104,7 @@
     "end": "Ощути вживую всю могущественность природы",
     "weather": "Yuzhno-Sakhalinsk"
 },{
-    "id":"1000",
+    "id":"35",
     "monthnumb":"10",
     "month":"ОКТЯБРЬ",
     "city":"Северный Пакистан",
@@ -1115,7 +1125,7 @@
     "weather": "Islamabad"
 
 },{
-    "id":"1001",
+    "id":"36",
     "monthnumb":"11",
     "month":"НОЯБРЬ",
     "city":"Магический Бали",
@@ -1135,7 +1145,7 @@
     "weather": "Ubud",
     "body_img":"https://media.kf.expert/cms/skolko-stoit-zhizn-na-bali-1.jpg"
 },{
-    "id":"1002",
+    "id":"37",
     "monthnumb":"12",
     "month":"ДЕКАБРЬ",
     "dates": "12-15 декабря",

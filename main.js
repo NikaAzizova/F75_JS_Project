@@ -11,4 +11,3 @@ import './src/index/createcardtours';
 import './src/index/date';
 import './src/index/createinfocompany'
 import './src/index/createTravekIdeas'
-import './src/index/modal'
