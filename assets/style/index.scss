@@ -1,4 +1,5 @@
 @import './template.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 body {
     background-color: $Background;
@@ -44,8 +45,11 @@ body {
 
         .nav {
             display: flex;
-            justify-content: right;
-            gap: 20rem;
+            align-items: center;
+            justify-content: space-between;
+            //display: flex;
+          //  justify-content: right;
+          //  gap: 20rem;
             
             
 
@@ -55,7 +59,8 @@ body {
 
             .link {
 
-                font-family: $FontText;
+                font-family: $FontTitle;
+                font-weight: 600;
                 color: white;
                 text-decoration: none;
 
