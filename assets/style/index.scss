@@ -78,6 +78,8 @@ body {
         position: relative;
 
         .burger-img {
+            width: 40px;
+            cursor: pointer;
             max-width: 50px;
         }
 
@@ -91,20 +93,21 @@ body {
                 position: absolute;
                 z-index: 1;
                 right: 2px;
-                width: 200px;
-                background-color: $Yellow;
+                width: 300px;
+                height: 251px;
+                background-color: $Background;
 
                 .menu-cross {
                     display: flex;
                     justify-content: flex-end;
-                    padding: 10px 10px 5px 0;
+                    padding: 20px 30px 10px 0px;
                     font-size: 20px;
-                    color: $burger-elements;
+                    color: $Yellow;
                 }
 
                 .menu-link {
                     margin-bottom: 30px;
-                    padding-left: 10px;
+                    padding-left: 30px;
                     text-decoration: none;
                     font-family: $FontText;
                     color: $burger-menu-color;
@@ -117,8 +120,9 @@ body {
 
                 //линия
                 .line {
-                    border: 1px solid $burger-elements;
-                    width: 180px;
+                    border: 1px solid $Yellow;
+                    width: 285px;
+                    opacity: 0.5;
                     margin: 0 auto;
                     margin-bottom: 10px;
                 }
