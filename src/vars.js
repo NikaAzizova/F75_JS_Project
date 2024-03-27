@@ -1,7 +1,7 @@
 //Форма с главной страницы
 //записываем инпуты в переменные
-export const nameInput = document.getElementById('name');
-export const emailInput = document.getElementById('email');
+export const nameInput = document.getElementById('name-form');
+export const emailInput = document.getElementById('email-form');
 export const telephoneInput = document.getElementById('telephone');
 //переменные для вывода ошибок и сообщений
 export const errorName = document.getElementById('error-name');
