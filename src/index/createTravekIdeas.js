@@ -1,6 +1,6 @@
 const btnsContry = document.querySelectorAll('.countrybutton');
 const btnContry1 = document.querySelector('.countrybutton.first');
-const contentTavelIdeas = document.querySelector('.result_ideas');
+const contentTavelIdeas = document.querySelector('.result-ideas');
 
 document.addEventListener('DOMContentLoaded', () => {
     contentTavelIdeas.innerHTML = "";

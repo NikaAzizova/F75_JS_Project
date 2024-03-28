@@ -1,7 +1,7 @@
 const btns = document.querySelectorAll('.buttonpage2');
 const btn1 = document.querySelector('.buttonpage2.first');
-const content1 = document.querySelector('.page2_content');
-const container = document.querySelector('.info_comp');
+const content1 = document.querySelector('.page2-content');
+const container = document.querySelector('.info-comp');
 
 document.addEventListener('DOMContentLoaded', () => {
     container.innerHTML = "";
@@ -48,9 +48,9 @@ function createInfo(object) {
     const {text, img} = object;
     const div = document.createElement('div');
     const template = `
-    <div class="page2_content">
-        <h3 class="page2_intro__colorwhite">${text}</h3>
-        <img class="img_view" src="${img}" alt="view1">
+    <div class="page2-content">
+        <h3 class="page2-intro__colorwhite">${text}</h3>
+        <img class="img-view" src="${img}" alt="view1">
           </div>
     `;
     div.insertAdjacentHTML('beforeend', template);

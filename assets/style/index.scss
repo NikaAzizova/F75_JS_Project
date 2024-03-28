@@ -174,7 +174,7 @@ button {
 }
 
 
-.page1_info {
+.page1-info {
     &__day {
         font-family: 'FiraSans';
         color: $Yellow;
@@ -182,7 +182,7 @@ button {
     }
 }
 
-.page2_intro {
+.page2-intro {
         &__color {
         color: $Yellow;
     }
@@ -205,7 +205,7 @@ button {
     color: rgba(41, 52, 62, 1);
 }
 
-.page2_bottom {
+.page2-bottom {
 
     &__color {
         color: $Yellow;
@@ -386,7 +386,7 @@ button {
     display: none;
 }
 
-.page1_info {
+.page1-info {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 50%), url('/assets/images/index/Rectangle_155.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -412,7 +412,7 @@ button {
     background-repeat: no-repeat;
 }
 
-.page2_intro {
+.page2-intro {
     padding: 3rem 1rem 0 0rem;
     display: grid;
     grid-template-columns: 14% 86%;
@@ -445,19 +445,19 @@ button {
     padding: 0;
 }
 
-.page2_content {
+.page2-content {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     gap: 0.2rem;
 }
 
-.img_view {
+.img-view {
     width: 36.875em;
     height: auto;
 }
 
-.page2_bottom {
+.page2-bottom {
     display: grid;
     grid-template-columns: 14% 86%;
     padding: 3rem 1rem 0 0;
@@ -686,7 +686,7 @@ button {
     color: white;
 }
 
-.page1_info {
+.page1-info {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 50%), url('/assets/images/index/Subtract.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -712,7 +712,7 @@ button {
     background-repeat: no-repeat;
 }
 
-.page2_intro {
+.page2-intro {
     padding: 7.3125rem 12.5rem 0 0rem;
     display: grid;
     grid-template-columns: 14% 86%;
@@ -744,18 +744,18 @@ button {
 }
 
 
-.page2_content {
+.page2-content {
     display: flex;
     justify-content: space-between;
     gap: 3.125rem;
 }
 
-.img_view {
+.img-view {
     width: 36.875em;
     height: auto;
 }
 
-.page2_bottom {
+.page2-bottom {
     display: grid;
     grid-template-columns: 14% 86%;
     padding: 8.4375rem 12.5rem 0 0;
